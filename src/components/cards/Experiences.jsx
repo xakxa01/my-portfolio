@@ -1,5 +1,5 @@
 import "../../styles/card/experiences.css";
-import { img, svg } from "../../assets";
+import { img, svg } from "../../../public/assets";
 const { nextjs, react, tailwind, graphql, wordpress, sass, redux, firebase } = svg
 
 const experiences = [

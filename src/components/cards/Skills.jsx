@@ -1,4 +1,4 @@
-import { svg } from "../../assets";
+import { svg } from "../../../public/assets";
 import { cutArray } from "../../lib/cutArray";
 import "../../styles/card/skills.css";
 

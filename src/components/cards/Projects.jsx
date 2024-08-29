@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconLink } from "@tabler/icons-react"
-import { img, svg } from "../../assets"
+import { img, svg } from "../../../public/assets"
 import '../../styles/card/projects.css'
 
 const { react, tailwind, nextjs, express, typescript, javascript, html } = svg
@@ -30,7 +30,7 @@ const projects = [
 	},
 	{
 		title: 'slide',
-		image: img.sanValentine,
+		image: img.slide,
 		description: 'This slide was part of my presentation on Fast Learning in Software Development at the Gentleman Programming community. It was designed to help participants quickly learn the concepts needed to develop a Twitter clone',
 		skills: [javascript, html],
 		github: 'https://github.com/xakxa01/auth-with-jwt-db-local-in-express'

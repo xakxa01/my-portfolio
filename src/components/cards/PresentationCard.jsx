@@ -1,5 +1,5 @@
 // import { svg } from '../../assets/svg';
-import { svg } from '../../assets';
+import { svg } from '../../../public/assets';
 import '../../styles/card/presentationCard.css'
 
 const title = "developer".toUpperCase().split("");
