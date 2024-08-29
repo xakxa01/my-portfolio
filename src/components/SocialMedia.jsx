@@ -1,8 +1,8 @@
-import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react"
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconMail } from "@tabler/icons-react"
 
 const socialMedia = [
 	{
-		icon: IconMail,
+		icon: IconBrandInstagram,
 		link: "https://www.instagram.com/xakxa01/",
 	},
 	{
