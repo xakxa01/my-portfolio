@@ -1,5 +1,5 @@
 import Aside from "./components/Aside";
-import CardControllers from "./components/cardControllers";
+import CardControllers from "./components/CardControllers";
 import Deck from "./components/Deck";
 import OpenWork from "./components/OpenWork";
 import Provider from "./components/Provider";

@@ -1,4 +1,4 @@
-import { IconRestore, IconSwipe } from "@tabler/icons-react"
+import { IconRestore } from "@tabler/icons-react"
 import { useDeckContext } from "../hook/useDeckContext"
 import { useEffect } from "react"
 import { IconSpace } from '@tabler/icons-react';
