@@ -2,6 +2,10 @@ import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-reac
 
 const socialMedia = [
 	{
+		icon: IconMail,
+		link: "https://www.instagram.com/xakxa01/",
+	},
+	{
 		icon: IconBrandLinkedin,
 		link: "http://www.linkedin.com/in/carlosxaviergb",
 	},
@@ -12,7 +16,7 @@ const socialMedia = [
 	{
 		icon: IconMail,
 		link: "mailto:carlosxaviergomezbarriento@gmail.com",
-	}
+	},
 ]
 
 const SocialMedia = () => (
