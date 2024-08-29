@@ -14,13 +14,13 @@ const to = (i: number, delay?: number) => ({
 	delay: i * delay!,
 })
 
-const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })
+const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })
 
 export const DeckProvider = ({ children }: TChildren) => {
 	const [gone] = useState(new Set())
 	const [props, api] = useSprings(cards.length, i => ({
 		...to(i, 100),
-		from: from(i)
+		from: from()
 	}))
 	const [selectedIndex, setSelectedIndex] = useState(cards.length - 1)
 

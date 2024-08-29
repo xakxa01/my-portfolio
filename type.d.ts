@@ -5,16 +5,6 @@ export type TChildren = {
 	children: ReactNode
 }
 
-export interface IExperience {
-	enterprise: string;
-	position: string;
-	period: string;
-	skills: string[];
-	image: string;
-	link: string;
-	description: string;
-}
-
 export interface IDeckContext {
 	api: SpringRef<State>,
 	gone: Set<unknown>,

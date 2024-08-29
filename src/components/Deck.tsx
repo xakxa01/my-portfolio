@@ -26,14 +26,16 @@ const Deck = () => {
 			const rot = isHorizontalDrag ? mx / 100 + (isGone ? dirX * 10 * velocity : 0) : 0 // Rotation for horizontal drag only
 			const scale = down ? 1.1 : 1
 
-
 			return {
 				x,
 				y,
 				rot,
 				scale,
 				delay: undefined,
-				config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 }
+				config: { 
+					friction: 50,
+					 tension: down ? 800 : isGone ? 200 : 500 
+					}
 			}
 		})
 

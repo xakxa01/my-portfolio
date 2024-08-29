@@ -1,7 +1,16 @@
 import "../../styles/card/experiences.css";
 import { img, svg } from "../../assets";
-import { IExperience } from "../../../type";
 const { nextjs, react, tailwind, graphql, wordpress, sass, redux, firebase } = svg
+
+interface IExperience {
+	enterprise: string;
+	position: string;
+	period: string;
+	skills: string[];
+	image: string;
+	link: string;
+	description: string;
+}
 
 const experiences = [
 	{
