@@ -1,0 +1,23 @@
+.projectTitle__container {
+	@apply uppercase font-bold text-5xl text-bright-gray-950 bg-gray-logo bg-center bg-contain bg-no-repeat size-3/6 flex justify-center items-center text-center pr-1 pb-1 md:size-56
+}
+
+.projects__buttons__blackLogo {
+	@apply size-14 bg-black-logo bg-contain bg-no-repeat content-[''] m-4 absolute
+}
+
+.projectTitle__container::before {
+	@apply left-0 top-0 projects__buttons__blackLogo;
+}
+
+.projectTitle__container::after {
+	@apply right-0 bottom-0 rotate-180 projects__buttons__blackLogo;
+}
+
+.projectTitle__faces::before {
+	@apply right-0 top-0 projects__buttons__blackLogo;
+}
+
+.projectTitle__faces::after {
+	@apply left-0 bottom-0 rotate-180 projects__buttons__blackLogo;
+}

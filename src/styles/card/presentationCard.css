@@ -1,0 +1,39 @@
+.presentationCard__container {
+	@apply h-full w-full bg-bright-gray-950 pt-14 overflow-hidden;
+}
+
+.presentationCard__mainContent {
+	@apply relative -mt-1 flex h-full w-full justify-center bg-dodger-blue-700;
+}
+
+.presentationCard__logo {
+	@apply mt-40;
+}
+
+.presentationCard__title {
+	@apply absolute left-3 top-32 flex flex-col items-center justify-center text-center text-3xl font-bold text-white;
+}
+
+.presentationCard__title::before {
+	content: "<";
+	@apply absolute -top-7 left-0 rotate-90;
+}
+
+.presentationCard__title::after {
+	content: "/>";
+	@apply absolute -bottom-7 left-0 rotate-90;
+}
+
+.presentationCard__letter {
+	@apply m-0 block hover:scale-150 transition-all w-full;
+}
+
+@screen md {
+	.presentationCard__logo {
+		@apply size-2/4 mt-24
+	}
+
+	.presentationCard__title {
+		@apply text-xl top-16
+	}
+}

@@ -1,0 +1,21 @@
+.app__container {
+	@apply relative h-screen w-full bg-slate-950 overflow-hidden flex justify-between md:flex-col
+}
+
+.app__left {
+	@apply flex flex-col size-full relative z-10
+}
+
+.app__right {
+	@apply size-full z-10 md:h-fit
+}
+
+.app__middle {
+	@apply size-full
+}
+
+@screen md {
+	.app__left {
+		@apply h-fit static
+	}
+}

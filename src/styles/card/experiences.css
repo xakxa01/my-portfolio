@@ -1,0 +1,53 @@
+.experiences__container {
+	@apply flex h-full w-full flex-col overflow-hidden rounded-2xl text-bright-gray-800;
+}
+
+.experiences__content {
+	@apply relative p-4 flex flex-col justify-between h-3/6;
+}
+
+.experiences__titleEnterprise {
+	@apply text-xl font-bold text-bright-gray-950;
+}
+
+.experiences__skill {
+	@apply mx-1 size-8 transition-all hover:scale-125;
+}
+
+.experiences__picture {
+	@apply rounded-b-xl h-3/6
+}
+
+.experiences__bottomContainer {
+	@apply flex items-center justify-between pt-2
+}
+
+.experiences__topContainer {
+	@apply flex items-center justify-between font-semibold text-bright-gray-950 py-3;
+}
+
+.experiences__picture {
+	@apply overflow-hidden
+}
+
+.experiences__picture img {
+	@apply size-full object-cover
+}
+
+.experiences__skills__container {
+	@apply flex
+}
+
+@screen md {
+	.experiences__titleEnterprise {
+		@apply text-lg
+	}
+
+	.experiences__topContainer {
+		@apply text-xs py-2
+	}
+
+	.experiences__picture {
+		@apply h-2/6
+	}
+}

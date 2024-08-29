@@ -1,0 +1,50 @@
+.aboutMe__container {
+	@apply w-full h-full
+}
+
+.aboutMe__description {
+	@apply p-4 text-gray-800
+}
+
+.aboutMe__title {
+	@apply font-bold text-xl mb-3
+}
+
+.aboutMe__languages {
+	@apply capitalize
+}
+
+.aboutMe__text {
+	@apply space-y-3
+}
+
+.aboutMe__text span {
+	@apply block
+}
+
+.aboutMe__languages__container {
+	@apply flex items-center justify-between mt-3
+}
+
+.aboutMe__languages strong {
+	@apply mr-2
+}
+
+
+@screen md {
+	.aboutMe__description {
+		@apply p-2 text-sm
+	}
+
+	.aboutMe__title {
+		@apply mb-2 text-base
+	}
+
+	.aboutMe__text {
+		@apply space-y-3
+	}
+
+	.aboutMe__languages__container {
+		@apply mt-2
+	}
+}

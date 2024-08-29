@@ -1,0 +1,25 @@
+.aside__container {
+	@apply flex-grow flex items-center absolute h-full
+}
+
+.aside__list {
+	@apply list-disc list-outside translate-x-8 w-full
+}
+
+.aside__item {
+	@apply text-white text-2xl transition-all p-2 my-1 hover:translate-x-5 cursor-pointer capitalize
+}
+
+@screen md {
+	.aside__container {
+		@apply bottom-3 items-end
+	}
+
+	.aside__list {
+		@apply flex list-none absolute z-20 translate-x-2
+	}
+
+	.aside__item {
+		@apply hover:translate-x-0 active:text-dodger-blue-700 text-base m-0
+	}
+}

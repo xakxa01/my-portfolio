@@ -1,0 +1,86 @@
+.projects__container {
+	@apply flex h-full w-full flex-col overflow-hidden rounded-2xl text-bright-gray-800;
+}
+
+.projects__content {
+	@apply p-4 flex flex-col justify-between h-3/6;
+}
+
+.projects__title {
+	@apply text-2xl font-bold text-bright-gray-950 mb-2;
+}
+
+.projects__description {
+	@apply h-full md:text-sm text-xl
+}
+
+.projects__skill {
+	@apply mx-1 size-8 transition-all hover:scale-125;
+}
+
+.projects__picture {
+	@apply rounded-b-xl h-3/6
+}
+
+.projects__bottomContainer {
+	@apply flex justify-between items-end
+}
+
+.projects__picture {
+	@apply overflow-hidden
+}
+
+.projects__picture img {
+	@apply size-full object-cover
+}
+
+.projects__skills__container {
+	@apply flex
+}
+
+.projects__buttons__container {
+	@apply flex flex-col justify-between items-start w-5/12 space-y-2
+}
+
+.projects__buttons__btnTemplate {
+	@apply flex justify-center items-center text-white rounded-lg px-3 py-2 space-x-1 size-full hover:bg-opacity-85
+}
+
+.projects__githubBtn {
+	@apply bg-stone-800 projects__buttons__btnTemplate
+}
+
+
+.projects__visitBtn {
+	@apply bg-dodger-blue-700 projects__buttons__btnTemplate
+}
+
+@screen md {
+	.projects__container {
+		@apply justify-between
+	}
+
+	.projects__content {
+		@apply flex justify-between w-full
+	}
+
+	.projects__title {
+		@apply text-lg
+	}
+
+	.projects__picture {
+		@apply h-3/6
+	}
+
+	.projects__bottomContainer {
+		@apply flex-col items-center
+	}
+
+	.projects__skills__container {
+		@apply my-2
+	}
+
+	.projects__buttons__container {
+		@apply w-full flex-row text-sm justify-center items-center space-y-0 space-x-2
+	}
+}

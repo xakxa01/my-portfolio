@@ -1,0 +1,17 @@
+.experienceTitle__container {
+	@apply flex h-full w-full items-center justify-center bg-gray-logo bg-center bg-no-repeat;
+}
+
+.experienceTitle__title {
+	@apply uppercase text-6xl font-bold text-bright-gray-950 text-center absolute
+}
+
+@screen md {
+	.experienceTitle__title {
+		@apply text-5xl
+	}
+
+	.experienceTitle__container {
+		@apply size-3/5 bg-contain
+	}
+}

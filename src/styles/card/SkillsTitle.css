@@ -1,0 +1,21 @@
+.skillsTitle__container {
+	@apply flex size-full justify-start items-center bg-gray-logo bg-center bg-no-repeat;
+}
+
+.skillsTitle__title {
+	@apply flex rotate-90 items-end justify-center text-center text-8xl font-bold uppercase text-bright-gray-950 -translate-x-28 absolute left-0
+}
+
+.skillsTitle__title::after {
+	@apply animate-terminal content-['s'];
+}
+
+@screen md {
+	.skillsTitle__title {
+		@apply text-6xl -translate-x-16
+	}
+
+	.skillsTitle__container {
+		@apply size-3/5 bg-contain
+	}
+}
