@@ -2,7 +2,7 @@ import { svg } from "../../assets";
 import { cutArray } from "../../lib/cutArray";
 import "../../styles/card/skills.css";
 
-const { wave, whiteLogo, ...restIcons } = svg;
+const { whiteLogo, ...restIcons } = svg;
 
 const skills = Object.values(restIcons)
 

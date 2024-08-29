@@ -1,5 +1,9 @@
 .presentationCard__container {
-	@apply h-full w-full bg-bright-gray-950 pt-14 overflow-hidden;
+	@apply size-full bg-bright-gray-950 pt-14 overflow-hidden;
+}
+
+.presentationCard__wave {
+	@apply h-1/6 bg-wave bg-bottom bg-no-repeat;
 }
 
 .presentationCard__mainContent {

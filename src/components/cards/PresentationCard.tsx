@@ -5,11 +5,7 @@ const title = "developer".toUpperCase().split("");
 
 const PresentationCard = () => (
 	<div className='presentationCard__container'>
-		<img
-			alt="wave"
-			draggable={false}
-			src={svg.wave}
-		/>
+		<div className='presentationCard__wave' />
 
 		<main className='presentationCard__mainContent'>
 			<h1 className='presentationCard__title'>
@@ -25,6 +21,7 @@ const PresentationCard = () => (
 					src={svg.whiteLogo}
 					alt="logo"
 					draggable={false}
+					loading='lazy'
 				/>
 			</div>
 		</main>

@@ -1,6 +1,5 @@
 // others
 import whiteLogo from './svg/white.svg'
-import wave from './svg/wave.svg'
 import myPhoto from './img/myPhoto.jpg'
 
 // icons
@@ -58,12 +57,11 @@ export const img = {
 }
 
 export const svg = {
+	whiteLogo,
 	sass,
 	redux,
 	graphql,
-	whiteLogo,
 	wordpress,
-	wave,
 	strapi,
 	html,
 	css,
