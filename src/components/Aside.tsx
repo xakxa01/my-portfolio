@@ -5,7 +5,7 @@ import '../styles/aside.css'
 const Aside = () => {
 	const { moveToIndex } = useDeckContext()
 
-	const navigateTo = (name) => {
+	const navigateTo = (name: string) => {
 		const indexFounded = findCardIndexByName(name)
 		moveToIndex(indexFounded)
 	}

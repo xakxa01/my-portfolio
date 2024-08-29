@@ -7,7 +7,7 @@ import { cards } from './cards'
 const Deck = () => {
 	const { api, gone, to, props, selectedIndex } = useDeckContext()
 
-	const trans = (r, s) => `perspective(10000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
+	const trans = (r: number, s: number) => `perspective(10000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 	const bind = useDrag(({ args: [index], down, movement: [mx, my], direction: [xDir, yDir], velocity }) => {
 		const trigger = velocity > 0.2
@@ -18,13 +18,15 @@ const Deck = () => {
 
 		if (!down && trigger) gone.add(index)
 
-		api.start(i => {
+		api.start((i: number) => {
 			if (index !== i) return
 			const isGone = gone.has(index)
 			const x = isHorizontalDrag ? (isGone ? (200 + window.innerWidth) * dirX : down ? mx : 0) : 0 // Lock y-axis for horizontal drag
 			const y = isVerticalDrag ? (isGone ? (200 + window.innerHeight) * dirY : down ? my : 0) : 0 // Lock x-axis for vertical drag
 			const rot = isHorizontalDrag ? mx / 100 + (isGone ? dirX * 10 * velocity : 0) : 0 // Rotation for horizontal drag only
 			const scale = down ? 1.1 : 1
+
+
 			return {
 				x,
 				y,
@@ -38,13 +40,13 @@ const Deck = () => {
 		if (!down && gone.size === cards.length) {
 			setTimeout(() => {
 				gone.clear()
-				api.start(i => to(i, 100))
+				api.start((i: number) => to(i, 100))
 			}, 600)
 		}
 	})
 
 	return <div className='deck__container'>
-		{props.map(({ x, y, rot, scale }, i) => (
+		{props.map(({ x, y, rot, scale }: {x: number, y: number, rot: number, scale: number}, i: number) => (
 			<animated.div
 				className='deck__stack'
 				key={i}

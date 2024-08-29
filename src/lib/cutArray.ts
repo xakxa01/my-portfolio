@@ -1,4 +1,4 @@
-export const cutArray = (array, cuts) => {
+export const cutArray = (array: string[], cuts: number) => {
 	const cuarto = Math.ceil(array.length / cuts);
 
 	return Array.from(

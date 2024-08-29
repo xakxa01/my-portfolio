@@ -1,4 +1,4 @@
-import { svg } from "../../../public/assets";
+import { svg } from "../../assets";
 import { cutArray } from "../../lib/cutArray";
 import "../../styles/card/skills.css";
 
@@ -8,7 +8,7 @@ const skills = Object.values(restIcons)
 
 const groupArray = cutArray(skills, 4);
 
-const SkillComponent = (array) => (
+const SkillComponent = (array: []) => (
 	<div className='skills__container'>
 		<div className='skills__containerIcons'>
 			{array.map((skill, i) => (

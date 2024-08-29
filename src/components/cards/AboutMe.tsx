@@ -1,4 +1,4 @@
-import { img } from '../../../public/assets'
+import { img } from '../../assets'
 import '../../styles/card/aboutMe.css'
 
 const AboutMe = () => (

@@ -1,5 +1,6 @@
 import "../../styles/card/experiences.css";
-import { img, svg } from "../../../public/assets";
+import { img, svg } from "../../assets";
+import { IExperience } from "../../../type";
 const { nextjs, react, tailwind, graphql, wordpress, sass, redux, firebase } = svg
 
 const experiences = [
@@ -32,7 +33,7 @@ const experiences = [
 	},
 ];
 
-const ExperienceComponent = (exp) => (
+const ExperienceComponent = (exp: IExperience) => (
 	<div className='experiences__container'>
 		<div className='experiences__picture'>
 			<img

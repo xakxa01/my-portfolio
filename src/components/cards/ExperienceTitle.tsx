@@ -4,7 +4,7 @@ const title = "experience";
 const titleLength = title.length;
 const halfTitle = Math.ceil(titleLength / 2);
 
-const sliceFunction = (first, second) => title.slice(first, second).split("");
+const sliceFunction = (first: number, second: number) => title.slice(first, second).split("");
 
 const firstPart = sliceFunction(0, halfTitle);
 const secondPart = sliceFunction(halfTitle, titleLength);

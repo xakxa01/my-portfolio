@@ -2,20 +2,21 @@ import { createContext, createElement } from 'react'
 import { useState } from 'react'
 import { useSprings } from '@react-spring/web'
 import { cards } from '../components/cards'
+import {IDeckContext, TChildren} from '../../type.d'
 
-const deckContext = createContext()
+const deckContext = createContext({} as IDeckContext)
 
-const to = (i, delay) => ({
+const to = (i: number, delay?: number) => ({
 	x: 0,
 	y: 0,
 	scale: 1,
 	rot: -2 + Math.random() * 5,
-	delay: i * delay,
+	delay: i * delay!,
 })
 
-const from = _i => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })
+const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })
 
-export const DeckProvider = ({ children }) => {
+export const DeckProvider = ({ children }: TChildren) => {
 	const [gone] = useState(new Set())
 	const [props, api] = useSprings(cards.length, i => ({
 		...to(i, 100),
@@ -23,7 +24,7 @@ export const DeckProvider = ({ children }) => {
 	}))
 	const [selectedIndex, setSelectedIndex] = useState(cards.length - 1)
 
-	const updateIndex = index => setSelectedIndex(index)
+	const updateIndex = (index: number) => setSelectedIndex(index)
 
 	const getOneCardAgain = () => {
 		if (gone.size > 0) {
@@ -49,7 +50,7 @@ export const DeckProvider = ({ children }) => {
 	// 	}
 	// }
 
-	const moveToIndex = index => {
+	const moveToIndex = (index: number) => {
 		updateIndex(index)
 		gone.clear()
 

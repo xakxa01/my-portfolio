@@ -1,11 +1,10 @@
-// import { svg } from '../../assets/svg';
-import { svg } from '../../../public/assets';
+import { svg } from '../../assets';
 import '../../styles/card/presentationCard.css'
 
 const title = "developer".toUpperCase().split("");
 
 const PresentationCard = () => (
-	<div className='presentationCard__container' name='PresentationCard'>
+	<div className='presentationCard__container'>
 		<img
 			alt="wave"
 			draggable={false}

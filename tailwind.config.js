@@ -73,9 +73,9 @@ export default {
         },
       },
       backgroundImage: {
-        'gray-logo': "url('/public/assets/svg/gris.svg')",
-        'black-logo': "url('/public/assets/svg/black.svg')",
-        ayudaConcho: "url('/public/assets/img/ayudaConcho.gif')"
+        'gray-logo': "url('./src/assets/svg/gris.svg')",
+        'black-logo': "url('./src/assets/svg/black.svg')",
+        ayudaConcho: "url('./dist/assets/img/ayudaConcho.gif')"
       }
     },
     screens: {

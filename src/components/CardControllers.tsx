@@ -7,7 +7,7 @@ import '../styles/cardController.css'
 const CardControllers = () => {
 	const { getOneCardAgain } = useDeckContext()
 
-	const keybinds = ({ key }) => key === " " && getOneCardAgain();
+	const keybinds = ({ key }: {key: string}) => key === " " && getOneCardAgain();
 
 	useEffect(() => {
 		window.addEventListener("keydown", keybinds);

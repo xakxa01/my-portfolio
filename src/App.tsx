@@ -1,9 +1,9 @@
-import Aside from "./components/Aside";
-import CardControllers from "./components/CardControllers";
-import Deck from "./components/Deck";
-import OpenWork from "./components/OpenWork";
-import Provider from "./components/Provider";
-import SocialMedia from "./components/SocialMedia";
+import Aside from "./components/Aside.tsx";
+import CardControllers from "./components/CardControllers.tsx";
+import Deck from "./components/Deck.tsx";
+import OpenWork from "./components/OpenWork.tsx";
+import Provider from "./components/Provider.tsx";
+import SocialMedia from "./components/SocialMedia.tsx";
 import './styles/app.css'
 
 const App = () => (

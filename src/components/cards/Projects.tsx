@@ -1,6 +1,15 @@
 import { IconBrandGithub, IconLink } from "@tabler/icons-react"
-import { img, svg } from "../../../public/assets"
+import { img, svg } from "../../assets"
 import '../../styles/card/projects.css'
+
+interface IProject {
+    title: string;
+    image: string;
+    description: string;
+    skills: string[];
+    link: string;
+    github: string;
+}
 
 const { react, tailwind, nextjs, express, typescript, javascript, html } = svg
 
@@ -45,7 +54,7 @@ const projects = [
 	},
 ]
 
-const ProjectComponent = (pro) => (
+const ProjectComponent = (pro: IProject) => (
 	<div className='projects__container'>
 		<div className='projects__picture'>
 			<img

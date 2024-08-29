@@ -1,4 +1,4 @@
-import { img } from '../../../public/assets'
+import { img } from '../../assets'
 import '../../styles/card/ayudaConcho.css'
 
 const { playStoreBtn, appStoreBtn, ayudaConcho } = img
