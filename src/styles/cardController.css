@@ -3,7 +3,7 @@
 }
 
 .cardController__explain {
-	@apply text-white mb-32 text-3xl w-3/4 flex flex-wrap justify-end md:hidden
+	@apply text-white -translate-y-32 -translate-x-3 text-3xl w-full flex flex-wrap justify-end md:hidden text-right
 }
 
 .cardController__spaceBar {
