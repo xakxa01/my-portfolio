@@ -15,7 +15,7 @@
 }
 
 .presentationCard__title {
-	@apply absolute left-3 top-32 flex flex-col items-center justify-center text-center text-3xl font-bold text-white;
+	@apply absolute left-3 top-24 flex flex-col items-center justify-center text-center text-3xl font-bold text-white;
 }
 
 .presentationCard__title::before {
@@ -38,6 +38,6 @@
 	}
 
 	.presentationCard__title {
-		@apply text-xl top-16
+		@apply text-2xl top-16
 	}
 }
