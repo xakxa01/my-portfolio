@@ -7,5 +7,5 @@
 }
 
 .deck__card {
-	@apply w-[28rem] h-[50rem] flex justify-center items-center rounded-2xl overflow-hidden bg-white z-40 md:w-[20rem] md:h-[36rem];
+	@apply w-[28rem] h-[50rem] flex justify-center items-center rounded-2xl overflow-hidden bg-white z-40 md:w-[20rem] md:h-[36rem] shadow-xl shadow-gray-800/40;
 }
