@@ -37,7 +37,7 @@ import nisakaComics from './img/experiences/nisakaComics.png';
 import ayudaConcho from './img/ayudaConchoLogo.png';
 import reactCraft from './img/projects/reactcraft.png';
 import sanValentine from './img/projects/sanValentine.png'
-import stripe from './img/projects/stripe.png'
+import chess from './img/projects/chess.png'
 import slide from './img/projects/slide.png'
 import authCode from './img/projects/authCode.png'
 
@@ -51,7 +51,7 @@ export const img = {
 	appStoreBtn,
 	reactCraft,
 	sanValentine,
-	stripe,
+	chess,
 	slide,
 	authCode,
 }

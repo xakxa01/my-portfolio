@@ -11,12 +11,13 @@ interface IProject {
     github: string;
 }
 
-const { react, tailwind, nextjs, express, typescript, javascript, html } = svg
+const { figma ,react, tailwind, nextjs, express, typescript, javascript, html } = svg
+const {reactCraft, sanValentine, authCode, slide, chess} = img
 
 const projects = [
 	{
 		title: 'ReactCraft',
-		image: img.reactCraft,
+		image: reactCraft,
 		description: 'I developed a minimalist version of Minecraft using React, Tailwind, and Three.js. The project features movement, flying, and block placement functionalities, offering a streamlined yet engaging experience.',
 		skills: [react, tailwind],
 		link: 'https://reactcraft.vercel.app/',
@@ -24,7 +25,7 @@ const projects = [
 	},
 	{
 		title: 'San Valentine',
-		image: img.sanValentine,
+		image: sanValentine,
 		description: 'I created a personalized Valentine’s Day card for my girlfriend using Next.js and Tailwind. This project functions as a virtual printer, generating a card that reveals a heartfelt message inside.',
 		skills: [nextjs, react, tailwind],
 		link: 'https://san-valentine-project.vercel.app/',
@@ -32,25 +33,24 @@ const projects = [
 	},
 	{
 		title: 'auth jwt with express',
-		image: img.authCode,
+		image: authCode,
 		description: 'I developed a REST API with authentication using Express and implemented protected routes to ensure secure access.',
 		skills: [express, typescript],
 		github: 'https://github.com/xakxa01/auth-with-jwt-db-local-in-express'
 	},
 	{
 		title: 'slide',
-		image: img.slide,
+		image: slide,
 		description: 'This slide was part of my presentation on Fast Learning in Software Development at the Gentleman Programming community. It was designed to help participants quickly learn the concepts needed to develop a Twitter clone',
 		skills: [javascript, html],
 		github: 'https://github.com/xakxa01/auth-with-jwt-db-local-in-express'
 	},
 	{
-		title: 'stripe project',
-		image: img.stripe,
-		description: 'This is a Stripe integration project I worked on to practice implementing the payment tool for my role at HelpMyTeam. Ultimately, I successfully integrated this payment method into our service plans.',
-		skills: [nextjs, typescript],
-		link: 'https://stripe-suscription-pw4fo5vdk-xakxa01s-projects.vercel.app/',
-		github: 'https://github.com/xakxa01/auth-with-jwt-db-local-in-express'
+		title: 'Rework Chess website',
+		image: chess,
+		description: 'This is a comprehensive design project created using Figma for a website redesign competition. Over the course of one month, I meticulously developed and refined the design, ensuring it met both aesthetic and functional requirements. My efforts were recognized, and I was ranked among the top five finalists in the competition.',
+		skills: [figma],
+		link: 'https://www.figma.com/design/AKPojKWeNOTA2K8kzoCXwi/chess.com?node-id=0-1&t=I6WLtJFqdDPdAyPo-1',
 	},
 ]
 
