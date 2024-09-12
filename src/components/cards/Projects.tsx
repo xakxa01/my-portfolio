@@ -48,7 +48,7 @@ const projects = [
 	{
 		title: 'Rework Chess website',
 		image: chess,
-		description: 'This is a comprehensive design project created using Figma for a website redesign competition. Over the course of one month, I meticulously developed and refined the design, ensuring it met both aesthetic and functional requirements. My efforts were recognized, and I was ranked among the top five finalists in the competition.',
+		description: 'This is a design project created using Figma for a website redesign competition. Over the course of one month, I developed the design. My efforts were recognized, and I was ranked among the top five finalists in the competition.',
 		skills: [figma],
 		link: 'https://www.figma.com/design/AKPojKWeNOTA2K8kzoCXwi/chess.com?node-id=0-1&t=I6WLtJFqdDPdAyPo-1',
 	},
