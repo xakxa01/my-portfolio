@@ -1,6 +1,6 @@
 import "../../styles/card/experiences.css";
 import { img, svg } from "../../assets";
-const { nextjs, react, tailwind, graphql, wordpress, sass, redux, firebase } = svg
+const { nextjs, react, tailwind, graphql, wordpress, sass, redux, firebase, git, figma, bitbucket } = svg
 
 interface IExperience {
 	enterprise: string;
@@ -21,6 +21,15 @@ const experiences = [
 		image: img.helpMyTeam,
 		link: "helpmyteam.com",
 		description: "In my role at HelpMyTeam, I focused on refactoring, code optimization, and improving the interface. A key achievement was developing a real-time button update system, which enabled immediate changes without needing to restart the server. Additionally, I optimized data request handling, significantly boosting performance. Beyond this, I also contributed to several other key improvements that enhanced overall efficiency and user experience.",
+	},
+	{
+		enterprise: "Yisrael Technology",
+		position: "React Native Developer",
+		period: "Sep 2024 - Feb 2025",
+		skills: [react, git, figma, bitbucket],
+		image: img.yisraelTechnology,
+		link: "yisraeltech.com",
+		description: "As a React Native Developer at Yisrael Technology, I collaborated on a U.S. medical project, utilizing Git, Figma, and Jira. I focused on performance optimization, implementing new features, and fixing bugs. Additionally, I contributed ideas, code, and solutions to support the team and enhance overall development efficiency.",
 	},
 	{
 		enterprise: "NisakaComics",

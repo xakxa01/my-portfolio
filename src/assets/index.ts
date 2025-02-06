@@ -23,6 +23,7 @@ import wordpress from './svg/WordPress.svg'
 import graphql from './svg/graphql.svg'
 import sass from './svg/sass.svg'
 import redux from './svg/redux.svg'
+import bitbucket from './svg/bitbucket.svg'
 
 // buttons
 import playStoreBtn from './img/playStoreBtn.png';
@@ -32,6 +33,7 @@ import appStoreBtn from './img/appStoreBtn.png';
 import helpMyTeam from './img/experiences/helpmyteam.jpg';
 import melanieTatis from './img/experiences/MelanieTatis.png';
 import nisakaComics from './img/experiences/nisakaComics.png';
+import yisraelTechnology from './img/experiences/yisraelTechnology.jpg';
 
 // projects
 import ayudaConcho from './img/ayudaConchoLogo.png';
@@ -54,6 +56,7 @@ export const img = {
 	chess,
 	slide,
 	authCode,
+	yisraelTechnology
 }
 
 export const svg = {
@@ -78,4 +81,5 @@ export const svg = {
 	reactNative,
 	react,
 	tailwind,
+	bitbucket
 }
