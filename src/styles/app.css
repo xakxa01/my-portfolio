@@ -1,5 +1,5 @@
 .app__container {
-	@apply relative h-screen w-full bg-slate-950 overflow-hidden flex justify-between md:flex-col
+	@apply relative h-screen w-full bg-slate-950 overflow-hidden flex justify-between
 }
 
 .app__left {
@@ -7,7 +7,7 @@
 }
 
 .app__right {
-	@apply size-full z-10 md:h-fit
+	@apply size-full z-10
 }
 
 .app__middle {
@@ -15,7 +15,15 @@
 }
 
 @screen md {
+	.app__container {
+		@apply flex-col
+	}
+
 	.app__left {
 		@apply h-fit static
+	}
+
+	.app__right {
+		@apply h-fit
 	}
 }

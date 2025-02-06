@@ -1,16 +1,17 @@
 import { useDeckContext } from "../hook/useDeckContext"
 import { findCardIndexByName } from "./cards";
 import '../styles/aside.css'
+import { useCallback, useMemo } from 'react';
 
 const Aside = () => {
 	const { moveToIndex } = useDeckContext()
 
-	const navigateTo = (name: string) => {
+	const navigateTo = useCallback((name: string) => {
 		const indexFounded = findCardIndexByName(name)
 		moveToIndex(indexFounded)
-	}
+	}, [moveToIndex])
 
-	const options = [
+	const options = useMemo(() => [
 		{
 			value: 'home',
 			event: () => navigateTo('PresentationCard'),
@@ -27,7 +28,7 @@ const Aside = () => {
 			value: 'projects',
 			event: () => navigateTo('ProjectTitle'),
 		}
-	]
+	], [navigateTo])
 
 	return (
 		<div className="aside__container">

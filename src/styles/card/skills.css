@@ -3,7 +3,7 @@
 }
 
 .skills__blackLogo {
-	@apply m-4 size-14 bg-black-logo bg-contain bg-no-repeat content-[''] md:size-9 absolute
+	@apply m-4 size-14 bg-black-logo bg-contain bg-no-repeat content-[''] absolute
 }
 
 .skills__container::after {
@@ -19,5 +19,15 @@
 }
 
 .skills__icon {
-	@apply size-28 text-dodger-blue-700 transition-all md:size-20;
+	@apply size-28 text-dodger-blue-700 transition-all
+}
+
+@screen md {
+	.skills__blackLogo {
+		@apply size-9
+	}
+
+	.skills__icon {
+		@apply size-20
+	}
 }

@@ -3,13 +3,14 @@ import { useDeckContext } from '../hook/useDeckContext'
 import { animated, to as interpolate } from '@react-spring/web'
 import '../styles/deck.css'
 import { cards } from './cards'
+import { useMemo, useCallback } from 'react'
 
 const Deck = () => {
 	const { api, gone, to, props, selectedIndex } = useDeckContext()
 
-	const trans = (r: number, s: number) => `perspective(10000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
+	const trans = useMemo(() => (r: number, s: number) => `perspective(10000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`, [])
 
-	const bind = useDrag(({ args: [index], down, movement: [mx, my], direction: [xDir, yDir], velocity }) => {
+	const bind = useDrag(useCallback(({ args: [index], down, movement: [mx, my], direction: [xDir, yDir], velocity }) => {
 		const trigger = velocity > 0.2
 		const isVerticalDrag = Math.abs(my) > Math.abs(mx) // Check if the drag is primarily vertical
 		const isHorizontalDrag = !isVerticalDrag // Check if the drag is primarily horizontal
@@ -32,10 +33,10 @@ const Deck = () => {
 				rot,
 				scale,
 				delay: undefined,
-				config: { 
+				config: {
 					friction: 50,
-					 tension: down ? 800 : isGone ? 200 : 500 
-					}
+					tension: down ? 800 : isGone ? 200 : 500
+				}
 			}
 		})
 
@@ -45,10 +46,10 @@ const Deck = () => {
 				api.start((i: number) => to(i, 100))
 			}, 600)
 		}
-	})
+	}, [api, gone, to]))
 
 	return <div className='deck__container'>
-		{props.map(({ x, y, rot, scale }: {x: number, y: number, rot: number, scale: number}, i: number) => (
+		{props.map(({ x, y, rot, scale }: { x: number, y: number, rot: number, scale: number }, i: number) => (
 			<animated.div
 				className='deck__stack'
 				key={i}

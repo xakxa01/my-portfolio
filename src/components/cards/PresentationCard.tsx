@@ -1,7 +1,8 @@
 import { svg } from '../../assets';
 import '../../styles/card/presentationCard.css'
 
-const title = "developer".toUpperCase().split("");
+const title = "developer";
+const splitTitle = title.toUpperCase().split("");
 
 const PresentationCard = () => (
 	<div className='presentationCard__container'>
@@ -9,7 +10,7 @@ const PresentationCard = () => (
 
 		<main className='presentationCard__mainContent'>
 			<h1 className='presentationCard__title'>
-				{title.map((letter, i) => (
+				{splitTitle.map((letter, i) => (
 					<span key={i} className='presentationCard__letter' >
 						{letter}
 					</span>
