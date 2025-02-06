@@ -3,7 +3,7 @@
 }
 
 .cardController__explain {
-	@apply text-white -translate-y-32 -translate-x-3 text-3xl w-full flex flex-wrap justify-end md:hidden text-right
+	@apply text-white -translate-y-32 -translate-x-3 text-3xl w-full flex flex-wrap justify-end text-right
 }
 
 .cardController__spaceBar {
@@ -11,7 +11,7 @@
 }
 
 .cardController__btnGetCardAgain {
-	@apply mb-4 bg-dodger-blue-700 p-3 rounded-xl active:bg-dodger-blue-700/70 invisible md:visible absolute
+	@apply mb-4 bg-dodger-blue-700 p-3 rounded-xl active:bg-dodger-blue-700/70 invisible absolute
 }
 
 @screen md {
@@ -20,6 +20,10 @@
 	}
 
 	.cardController__btnGetCardAgain {
-		@apply p-2
+		@apply p-2 visible
+	}
+
+	.cardController__explain {
+		@apply hidden
 	}
 }
