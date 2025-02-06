@@ -77,6 +77,7 @@ export default {
         'black-logo': "url('/src/assets/svg/black.svg')",
         ayudaConcho: "url('/src/assets/img/ayudaConcho.gif')",
         wave: "url('/src/assets/svg/wave.svg')",
+        me: `url('/src/assets/img/me.jpeg')`
       }
     },
     screens: {

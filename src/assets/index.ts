@@ -1,6 +1,6 @@
 // others
 import whiteLogo from './svg/white.svg'
-import myPhoto from './img/myPhoto.jpg'
+import me from './img/me.jpeg'
 
 // icons
 import strapi from './svg/strapi.svg'
@@ -42,7 +42,7 @@ import slide from './img/projects/slide.png'
 import authCode from './img/projects/authCode.png'
 
 export const img = {
-	myPhoto,
+	me,
 	helpMyTeam,
 	melanieTatis,
 	nisakaComics,
