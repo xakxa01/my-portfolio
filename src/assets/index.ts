@@ -5,6 +5,7 @@ import whiteLogo from './svg/white.svg'
 import Strapi from './svg/Strapi';
 import Java from './svg/Java';
 import Express from './svg/Express';
+import MaterialUI from './svg/MaterialUI';
 
 // buttons
 import playStoreBtn from './img/playStoreBtn.png';
@@ -47,5 +48,6 @@ export const svg = {
 	whiteLogo,
 	Strapi,
 	Java,
-	Express
+	Express,
+	MaterialUI
 }
