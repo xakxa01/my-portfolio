@@ -1,5 +1,6 @@
-import { img } from "../../../assets";
+import { img, svg } from "../../../assets";
 import { IconBrandBitbucket, IconBrandFigma, IconBrandFirebase, IconBrandGraphql, IconBrandNextjs, IconBrandReact, IconBrandRedux, IconBrandSass, IconBrandTailwind, IconBrandTypescript, IconBrandWordpress, IconBrandGit, IconBrandMysql } from "@tabler/icons-react";
+const { Strapi, MaterialUI } = svg;
 
 const
 	frontend = "Frontend Developer",
@@ -10,7 +11,7 @@ export const experiences = [
 		enterprise: "Helpmyteam",
 		position: frontend,
 		period: "Jun 2022 - Aug 2024",
-		skills: [IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandGraphql, IconBrandWordpress, IconBrandGit],
+		skills: [IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandGraphql, IconBrandWordpress, IconBrandGit, Strapi],
 		image: img.helpMyTeam,
 		link: "helpmyteam.com",
 		description: "In my role at HelpMyTeam, I focused on refactoring, code optimization, and improving the interface. A key achievement was developing a real-time button update system, which enabled immediate changes without needing to restart the server. Additionally, I optimized data request handling, significantly boosting performance. Beyond this, I also contributed to several other key improvements that enhanced overall efficiency and user experience.",
@@ -28,7 +29,7 @@ export const experiences = [
 		enterprise: "Dofus Caribbean",
 		position: frontend,
 		period: "Jan 2025 - Feb 2025",
-		skills: [IconBrandReact, IconBrandNextjs, IconBrandTypescript, IconBrandGit, IconBrandMysql],
+		skills: [IconBrandReact, IconBrandNextjs, IconBrandTypescript, IconBrandGit, IconBrandMysql, MaterialUI],
 		image: img.dofuCaribbean,
 		link: "dofu.com.do",
 		description: "I worked on this project as a freelancer, developing and implementing a dashboard, a login system, and a user registration form with role management. The project includes full CRUD functionality, an analytics section with Excel export, and a script for extracting emails for private matters, focusing primarily on system optimization.",
@@ -37,7 +38,7 @@ export const experiences = [
 		enterprise: "Idoppril",
 		position: frontend,
 		period: "Nov 2024 - Nov 2024",
-		skills: [IconBrandNextjs, IconBrandReact, IconBrandTypescript],
+		skills: [IconBrandNextjs, IconBrandReact, IconBrandTypescript, MaterialUI],
 		image: img.idoppril,
 		description: "I worked on this project as a freelancer, where I developed and implemented a dashboard, a login system, and a registration system. Each feature includes its respective validations, and the dashboard incorporates full CRUD functionality.",
 	},
