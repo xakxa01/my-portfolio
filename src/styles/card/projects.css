@@ -15,7 +15,7 @@
 }
 
 .projects__skill {
-	@apply mx-1 size-8 transition-all hover:scale-125;
+	@apply mx-1 size-8 transition-all hover:scale-125 text-dodger-blue-700;
 }
 
 .projects__picture {

@@ -17,8 +17,6 @@ export default {
         terminal: "terminal 0.5s ease-in-out infinite alternate",
       },
       colors: {
-        azul: '#0099ff',
-        verde: '#01DFA2',
         'shamrock': {
           '50': '#eafff6',
           '100': '#cdfee8',
