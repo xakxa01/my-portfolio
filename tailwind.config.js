@@ -73,7 +73,7 @@ export default {
       backgroundImage: {
         'gray-logo': "url('/src/assets/svg/gris.svg')",
         'black-logo': "url('/src/assets/svg/black.svg')",
-        ayudaConcho: "url('/src/assets/img/ayudaConcho.gif')",
+        ayudaConcho: "url('/src/assets/img/projects/ayudaConcho.gif')",
         wave: "url('/src/assets/svg/wave.svg')",
         me: `url('/src/assets/img/me.jpeg')`
       }

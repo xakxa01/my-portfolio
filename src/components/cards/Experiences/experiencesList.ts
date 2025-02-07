@@ -1,23 +1,11 @@
-import "../../styles/card/experiences.css";
-import { img } from "../../assets";
-import { IconBrandBitbucket, IconBrandFigma, IconBrandFirebase, IconBrandGraphql, IconBrandNextjs, IconBrandReact, IconBrandRedux, IconBrandSass, IconBrandTailwind, IconBrandTypescript, IconBrandWordpress, IconBrandGit, IconProps } from "@tabler/icons-react";
-import { FC } from "react";
-
-interface IExperience {
-	enterprise: string;
-	position: string;
-	period: string;
-	skills: FC<IconProps>[];
-	image: string;
-	link: string;
-	description: string;
-}
+import { img } from "../../../assets";
+import { IconBrandBitbucket, IconBrandFigma, IconBrandFirebase, IconBrandGraphql, IconBrandNextjs, IconBrandReact, IconBrandRedux, IconBrandSass, IconBrandTailwind, IconBrandTypescript, IconBrandWordpress, IconBrandGit, IconBrandMysql } from "@tabler/icons-react";
 
 const
 	frontend = "Frontend Developer",
 	reactNative = "React Native Developer";
 
-const experiences = [
+export const experiences = [
 	{
 		enterprise: "Helpmyteam",
 		position: frontend,
@@ -37,13 +25,21 @@ const experiences = [
 		description: "As a React Native Developer at Yisrael Technology, I collaborated on a U.S. medical project, utilizing Git, Figma, and Jira. I focused on performance optimization, implementing new features, and fixing bugs. Additionally, I contributed ideas, code, and solutions to support the team and enhance overall development efficiency.",
 	},
 	{
+		enterprise: "Dofus Caribbean",
+		position: frontend,
+		period: "Jan 2025 - Feb 2025",
+		skills: [IconBrandReact, IconBrandNextjs, IconBrandTypescript, IconBrandGit, IconBrandMysql],
+		image: img.dofuCaribbean,
+		link: "dofu.com.do",
+		description: "I worked on this project as a freelancer, developing and implementing a dashboard, a login system, and a user registration form with role management. The project includes full CRUD functionality, an analytics section with Excel export, and a script for extracting emails for private matters, focusing primarily on system optimization.",
+	},
+	{
 		enterprise: "Idoppril",
 		position: frontend,
-		period: "Sep 2024 - Feb 2025",
-		skills: [IconBrandReact, IconBrandTypescript, IconBrandNextjs],
-		image: img.yisraelTechnology,
-		link: "yisraeltech.com",
-		description: "As a React Native Developer at Yisrael Technology, I collaborated on a U.S. medical project, utilizing Git, Figma, and Jira. I focused on performance optimization, implementing new features, and fixing bugs. Additionally, I contributed ideas, code, and solutions to support the team and enhance overall development efficiency.",
+		period: "Nov 2024 - Nov 2024",
+		skills: [IconBrandNextjs, IconBrandReact, IconBrandTypescript],
+		image: img.idoppril,
+		description: "I worked on this project as a freelancer, where I developed and implemented a dashboard, a login system, and a registration system. Each feature includes its respective validations, and the dashboard incorporates full CRUD functionality.",
 	},
 	{
 		enterprise: "NisakaComics",
@@ -64,42 +60,3 @@ const experiences = [
 		description: "Led the design of the website, focusing on elevating its visual appeal and optimizing the user experience. Crafted intuitive interfaces that engage users effectively while ensuring a seamless interaction. Additionally, developed a mobile-friendly interface that provides a responsive and user-centric experience on various devices, enhancing accessibility and consistency across platforms.",
 	},
 ];
-
-const ExperienceComponent = (exp: IExperience) => (
-	<div className='experiences__container'>
-		<div className='experiences__picture'>
-			<img
-				src={exp.image}
-				alt="job"
-				draggable={false}
-			/>
-		</div>
-
-		<div className='experiences__content'>
-			<h2 className='experiences__titleEnterprise'>{exp.enterprise}</h2>
-
-			<div className="experiences__topContainer">
-				<h3 className='experiences__position'>{exp.position}</h3>
-				<p className='capitalize'>{exp.period}</p>
-			</div>
-
-			<p className='h-full md:text-sm'>{exp.description}</p>
-			<div className="experiences__bottomContainer">
-				<ul className='experiences__skills__container'>
-					{exp.skills?.map((Skill, i) => (
-						<span className='experiences__skill' key={i}>
-							<Skill size={30} />
-						</span>
-					))}
-				</ul>
-			</div>
-		</div>
-	</div>
-);
-
-const Experiences = () => ({
-	experiences,
-	ExperienceComponent,
-});
-
-export default Experiences;

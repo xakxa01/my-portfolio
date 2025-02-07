@@ -17,17 +17,17 @@ const Aside = () => {
 			event: () => navigateTo('PresentationCard'),
 		},
 		{
-			value: 'skills',
-			event: () => navigateTo('SkillsTitle'),
-		},
-		{
 			value: 'experience',
 			event: () => navigateTo('ExperienceTitle')
 		},
 		{
 			value: 'projects',
 			event: () => navigateTo('ProjectTitle'),
-		}
+		},
+		{
+			value: 'skills',
+			event: () => navigateTo('SkillsTitle'),
+		},
 	], [navigateTo])
 
 	return (

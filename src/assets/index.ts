@@ -15,6 +15,8 @@ import helpMyTeam from './img/experiences/helpmyteam.jpg';
 import melanieTatis from './img/experiences/MelanieTatis.png';
 import nisakaComics from './img/experiences/nisakaComics.png';
 import yisraelTechnology from './img/experiences/yisraelTechnology.jpg';
+import idoppril from './img/experiences/idoppril.jpg'
+import dofuCaribbean from './img/experiences/dofuCaribbean.png'
 
 // projects
 import ayudaConcho from './img/ayudaConchoLogo.png';
@@ -36,7 +38,9 @@ export const img = {
 	chess,
 	slide,
 	authCode,
-	yisraelTechnology
+	yisraelTechnology,
+	idoppril,
+	dofuCaribbean
 }
 
 export const svg = {
