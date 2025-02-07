@@ -37,7 +37,8 @@ const AyudaConcho = () => (
 						<img
 							draggable={false}
 							src={img}
-							alt='store' />
+							alt='store'
+						/>
 					</a>
 				))}
 			</div>

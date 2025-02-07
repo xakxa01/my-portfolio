@@ -17,8 +17,6 @@ export default {
         terminal: "terminal 0.5s ease-in-out infinite alternate",
       },
       colors: {
-        azul: '#0099ff',
-        verde: '#01DFA2',
         'shamrock': {
           '50': '#eafff6',
           '100': '#cdfee8',
@@ -75,8 +73,9 @@ export default {
       backgroundImage: {
         'gray-logo': "url('/src/assets/svg/gris.svg')",
         'black-logo': "url('/src/assets/svg/black.svg')",
-        ayudaConcho: "url('/src/assets/img/ayudaConcho.gif')",
+        ayudaConcho: "url('/src/assets/img/projects/ayudaConcho.gif')",
         wave: "url('/src/assets/svg/wave.svg')",
+        me: `url('/src/assets/img/me.jpeg')`
       }
     },
     screens: {
