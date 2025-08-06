@@ -1,6 +1,6 @@
 import { IconProps } from "@tabler/icons-react";
 import { FC } from "react";
-import "../../../styles/card/skills.css";
+import "@/styles/card/skills.css";
 
 const SkillComponent = (array: []) => (
 	<div className='skills__container'>

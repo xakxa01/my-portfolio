@@ -1,8 +1,8 @@
 import { IconBrandFigma, IconBrandGithub, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconLink, IconProps } from "@tabler/icons-react"
-import { img } from "../../assets"
-import '../../styles/card/projects.css'
+import { img } from "@/assets"
+import '@/styles/card/projects.css'
 import { FC } from "react";
-import Express from "../../assets/svg/Express";
+import Express from "@/assets/svg/Express";
 
 interface IProject {
 	title: string;

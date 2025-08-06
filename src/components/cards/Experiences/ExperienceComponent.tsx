@@ -1,6 +1,6 @@
 import { IconProps } from "@tabler/icons-react";
 import { FC } from "react";
-import "../../../styles/card/experiences.css";
+import "@/styles/card/experiences.css";
 
 interface IExperience {
 	enterprise: string;

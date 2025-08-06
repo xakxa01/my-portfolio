@@ -1,4 +1,4 @@
-import '../../styles/card/SkillsTitle.css'
+import '@/styles/card/SkillsTitle.css'
 
 const SkillsTitle = () => (
 	<div className='skillsTitle__container'>

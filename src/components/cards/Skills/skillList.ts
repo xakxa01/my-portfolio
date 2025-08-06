@@ -23,7 +23,7 @@ import {
 	IconBrandTailwind,
 	IconBrandTypescript,
 } from "@tabler/icons-react";
-import { svg } from "../../../assets";
+import { svg } from "@/assets";
 
 const { Express, Java, Strapi, MaterialUI } = svg;
 
