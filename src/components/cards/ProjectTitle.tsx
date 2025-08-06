@@ -1,4 +1,4 @@
-import '../../styles/card/projectTitle.css'
+import '@/styles/card/projectTitle.css'
 
 const ProjectTitle = () => (
 	<p className='projectTitle__container'>

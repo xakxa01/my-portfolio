@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import deckContext from "../context/deck.tsx"
+import deckContext from "@/context/deck.tsx"
 
 export const useDeckContext = () => {
 	const context = useContext(deckContext)

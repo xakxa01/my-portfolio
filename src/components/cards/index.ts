@@ -8,10 +8,23 @@ import ProjectTitle from "./ProjectTitle.tsx";
 import AyudaConcho from "./AyudaConcho.tsx";
 import Projects from "./Projects.tsx";
 import { FC } from "react";
+import moment from "moment";
 
 const { skills, SkillComponent } = Skills();
 const { experiences, ExperienceComponent } = Experiences();
 const { projects, ProjectComponent } = Projects()
+
+const sortedExperiences = experiences.sort((a: { period: string }, b: { period: string }) => {
+	const getStartDate = (period: string) => {
+		const startYear = period.split('-')[0];
+		return moment(startYear, 'YYYY');
+	};
+	
+	const aStartDate = getStartDate(a.period);
+	const bStartDate = getStartDate(b.period);
+	
+	return bStartDate.valueOf() - aStartDate.valueOf();
+});
 
 const multiComponent = (array: [], component: FC, namePrefix: string) => (
 	array.map((item: [], index) => ({
@@ -31,7 +44,7 @@ export const cards = [
 
 	// experiences
 	{ component: ExperienceTitle, name: 'ExperienceTitle' },
-	...multiComponent(experiences as [], ExperienceComponent as FC, 'Experiences'),
+	...multiComponent(sortedExperiences as [], ExperienceComponent as FC, 'Experiences'),
 
 	// projects
 	{ component: ProjectTitle, name: 'ProjectTitle' },

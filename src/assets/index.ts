@@ -18,6 +18,7 @@ import nisakaComics from './img/experiences/nisakaComics.png';
 import yisraelTechnology from './img/experiences/yisraelTechnology.jpg';
 import idoppril from './img/experiences/idoppril.jpg'
 import dofuCaribbean from './img/experiences/dofuCaribbean.png'
+import thundercoders from './img/experiences/thundercoders.png'
 
 // projects
 import ayudaConcho from './img/ayudaConchoLogo.png';
@@ -41,7 +42,8 @@ export const img = {
 	authCode,
 	yisraelTechnology,
 	idoppril,
-	dofuCaribbean
+	dofuCaribbean,
+	thundercoders,
 }
 
 export const svg = {

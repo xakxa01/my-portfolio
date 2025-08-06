@@ -1,5 +1,5 @@
-import { TChildren } from "../../type"
-import { DeckProvider } from "../context/deck"
+import { TChildren } from "@/type"
+import { DeckProvider } from "@/context/deck"
 
 const Provider = ({ children }: TChildren) => (
 	<DeckProvider>

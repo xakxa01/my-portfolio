@@ -1,4 +1,4 @@
-import { cutArray } from "../../../lib/cutArray";
+import { cutArray } from "@/lib/cutArray";
 import SkillComponent from "./SkillComponent";
 import { skills } from "./skillList";
 

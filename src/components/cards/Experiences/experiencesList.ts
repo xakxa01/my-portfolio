@@ -1,4 +1,4 @@
-import { img, svg } from "../../../assets";
+import { img, svg } from "@/assets";
 import { IconBrandBitbucket, IconBrandFigma, IconBrandFirebase, IconBrandGraphql, IconBrandNextjs, IconBrandReact, IconBrandRedux, IconBrandSass, IconBrandTailwind, IconBrandTypescript, IconBrandWordpress, IconBrandGit, IconBrandMysql } from "@tabler/icons-react";
 const { Strapi, MaterialUI } = svg;
 
@@ -8,56 +8,65 @@ const
 
 export const experiences = [
 	{
+		enterprise: "Thundercodes",
+		position: `Senior ${frontend}`,
+		period: "Jan 2024 – Mar 2025",
+		skills: [IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandGit, IconBrandRedux, IconBrandTypescript],
+		image: img.thundercoders,
+		link: "thundercoders.com",
+		description: "At ThunderCoders, I onboarded over 5 new developers, which reduced ramp-up time by streamlining the integration process. I improved website performance by 40% by refactoring legacy code, compressing assets, and implementing lazy loading. I also standardized workflows and authored documentation that increased team efficiency across departments.",
+	},
+	{
 		enterprise: "Helpmyteam",
 		position: frontend,
-		period: "Jun 2022 - Aug 2024",
+		period: "Mar 2019 – May 2021",
 		skills: [IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandGraphql, IconBrandWordpress, IconBrandGit, Strapi],
 		image: img.helpMyTeam,
 		link: "helpmyteam.com",
-		description: "In my role at HelpMyTeam, I focused on refactoring, code optimization, and improving the interface. A key achievement was developing a real-time button update system, which enabled immediate changes without needing to restart the server. Additionally, I optimized data request handling, significantly boosting performance. Beyond this, I also contributed to several other key improvements that enhanced overall efficiency and user experience.",
+		description: "At HelpMyTeam, I restructured the frontend architecture, which improved request form performance by 65%. I developed internal tools such as a modular form builder that sped up feature delivery. I also enhanced the mobile experience through responsive design improvements, which increased mobile traffic and reduced bounce rates.",
 	},
 	{
 		enterprise: "Yisrael Technology",
 		position: reactNative,
-		period: "Sep 2024 - Feb 2025",
+		period: "Jul 2022 – Jul 2023",
 		skills: [IconBrandReact, IconBrandTypescript, IconBrandGit, IconBrandFigma, IconBrandBitbucket],
 		image: img.yisraelTechnology,
 		link: "yisraeltech.com",
-		description: "As a React Native Developer at Yisrael Technology, I collaborated on a U.S. medical project, utilizing Git, Figma, and Jira. I focused on performance optimization, implementing new features, and fixing bugs. Additionally, I contributed ideas, code, and solutions to support the team and enhance overall development efficiency.",
+		description: "At Yisrael Technology, I contributed to a U.S. healthcare app by optimizing mobile workflows, which improved the patient experience. I maintained and refactored internal libraries to reduce technical debt and increase code reusability. I also delivered a social networking app for event coordination, which enhanced user engagement through intuitive UI design.",
 	},
 	{
 		enterprise: "Dofus Caribbean",
 		position: frontend,
-		period: "Jan 2025 - Feb 2025",
+		period: "Sep 2023 – Dec 2023",
 		skills: [IconBrandReact, IconBrandNextjs, IconBrandTypescript, IconBrandGit, IconBrandMysql, MaterialUI],
 		image: img.dofuCaribbean,
 		link: "dofu.com.do",
-		description: "I worked on this project as a freelancer, developing and implementing a dashboard, a login system, and a user registration form with role management. The project includes full CRUD functionality, an analytics section with Excel export, and a script for extracting emails for private matters, focusing primarily on system optimization.",
+		description: "At Dofu Caribbean, I built a real-time email processing system in Python that improved message handling efficiency by 60%. I developed a task management dashboard used by over 150 employees, enabling real-time issue resolution. I also optimized backend logic and implemented advanced Excel export features to support over 8,000 weekly emails without performance loss.",
 	},
 	{
 		enterprise: "Idoppril",
 		position: frontend,
-		period: "Nov 2024 - Nov 2024",
+		period: "Oct 2021 – May 2022",
 		skills: [IconBrandNextjs, IconBrandReact, IconBrandTypescript, MaterialUI],
 		image: img.idoppril,
-		description: "I worked on this project as a freelancer, where I developed and implemented a dashboard, a login system, and a registration system. Each feature includes its respective validations, and the dashboard incorporates full CRUD functionality.",
+		description: "While working with IDOPPRIL, I designed and deployed a secure JWT-based authentication system that strengthened login protection. I built a responsive admin dashboard that streamlined user and data management workflows. I also implemented adaptive pagination logic based on API responses to improve system scalability and responsiveness.",
 	},
 	{
 		enterprise: "NisakaComics",
 		position: frontend,
-		period: "Nov 2021 - Jan 2023",
+		period: "Aug 2021 – Sep 2021",
 		skills: [IconBrandNextjs, IconBrandReact, IconBrandFirebase, IconBrandGit],
 		image: img.nisakaComics,
 		link: "nisakacomics.com",
-		description: "I designed, developed, and optimized the website to enhance user experience and performance. A key achievement was creating and managing the database for efficient data handling. I also developed a responsive mobile interface, integrated a secure payment system, and collaborated on front-end and backend integration for seamless functionality. Beyond these, I contributed to additional improvements that further refined the project.",
+		description: "At NisakaComics, I integrated the PayPal payment gateway, which reduced cart abandonment and improved transaction security. I collaborated on backend enhancements that decreased load times and improved server stability. I also launched a dynamic admin dashboard that simplified content management and boosted operational efficiency.",
 	},
 	{
 		enterprise: "Melanie Tatis",
 		position: frontend,
-		period: "May 2022 – May 2022",
+		period: "Jan 2019 – Feb 2019",
 		skills: [IconBrandReact, IconBrandSass, IconBrandRedux, IconBrandGit],
 		image: img.melanieTatis,
 		link: "https://melanietaties.vercel.app/",
-		description: "Led the design of the website, focusing on elevating its visual appeal and optimizing the user experience. Crafted intuitive interfaces that engage users effectively while ensuring a seamless interaction. Additionally, developed a mobile-friendly interface that provides a responsive and user-centric experience on various devices, enhancing accessibility and consistency across platforms.",
+		description: "For this project, I deployed a custom email system that streamlined portfolio inquiries and improved professional communication. I optimized the layout and responsiveness for mobile devices, which increased cross-platform engagement. I also built an intuitive dashboard that simplified content uploads and management.",
 	},
 ];
