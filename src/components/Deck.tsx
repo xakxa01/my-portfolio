@@ -1,8 +1,8 @@
 import { useDrag } from 'react-use-gesture'
-import { useDeckContext } from '../hook/useDeckContext'
+import { useDeckContext } from '@/hook/useDeckContext'
 import { animated, to as interpolate } from '@react-spring/web'
-import '../styles/deck.css'
-import { cards } from './cards'
+import '@/styles/deck.css'
+import { cards } from '@/components/cards'
 import { useMemo, useCallback } from 'react'
 
 const Deck = () => {

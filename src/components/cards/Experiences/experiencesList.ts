@@ -1,4 +1,4 @@
-import { img, svg } from "../../../assets";
+import { img, svg } from "@/assets";
 import { IconBrandBitbucket, IconBrandFigma, IconBrandFirebase, IconBrandGraphql, IconBrandNextjs, IconBrandReact, IconBrandRedux, IconBrandSass, IconBrandTailwind, IconBrandTypescript, IconBrandWordpress, IconBrandGit, IconBrandMysql } from "@tabler/icons-react";
 const { Strapi, MaterialUI } = svg;
 

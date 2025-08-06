@@ -1,6 +1,6 @@
-import { useDeckContext } from "../hook/useDeckContext"
-import { findCardIndexByName } from "./cards";
-import '../styles/aside.css'
+import { useDeckContext } from "@/hook/useDeckContext"
+import { findCardIndexByName } from "@/components/cards";
+import '@/styles/aside.css'
 import { useCallback, useMemo } from 'react';
 
 const Aside = () => {

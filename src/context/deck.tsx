@@ -1,8 +1,8 @@
 import { createContext, createElement } from 'react'
 import { useState } from 'react'
 import { useSprings } from '@react-spring/web'
-import { cards } from '../components/cards'
-import { IDeckContext, TChildren } from '../../type.d'
+import { cards } from '@/components/cards'
+import { IDeckContext, TChildren } from '@/type.d'
 
 const deckContext = createContext({} as IDeckContext)
 

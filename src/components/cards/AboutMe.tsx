@@ -1,4 +1,4 @@
-import '../../styles/card/aboutMe.css'
+import '@/styles/card/aboutMe.css'
 
 const AboutMe = () => (
 	<div className='aboutMe__container group'>
