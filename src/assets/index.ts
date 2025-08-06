@@ -18,7 +18,7 @@ import nisakaComics from './img/experiences/nisakaComics.png';
 import yisraelTechnology from './img/experiences/yisraelTechnology.jpg';
 import idoppril from './img/experiences/idoppril.jpg'
 import dofuCaribbean from './img/experiences/dofuCaribbean.png'
-import thundercoders from './img/experiences/thundercoders.png'
+import thundercoders from './img/experiences/thunderCoders.png'
 
 // projects
 import ayudaConcho from './img/ayudaConchoLogo.png';
