@@ -1,5 +1,6 @@
 import { useDrag } from 'react-use-gesture'
 import { useDeckContext } from '@/features/deck/hooks/useDeckContext'
+import { useDeckKeyboardControls } from '@/features/deck/hooks/useDeckKeyboardControls'
 import { animated, to as interpolate } from '@react-spring/web'
 import '@/styles/components/deck.css'
 import { cards } from '@/features/portfolio/components/cards'
@@ -7,6 +8,8 @@ import { useMemo, useCallback } from 'react'
 
 const Deck = () => {
 	const { api, gone, to, props, selectedIndex } = useDeckContext()
+	
+	useDeckKeyboardControls()
 
 	const trans = useMemo(() => (r: number, s: number) => `perspective(10000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`, [])
 

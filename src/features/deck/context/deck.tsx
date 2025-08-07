@@ -1,10 +1,17 @@
-import { createContext, createElement } from 'react'
-import { useState } from 'react'
+import { createContext } from 'react'
+import { useState, useCallback } from 'react'
 import { useSprings } from '@react-spring/web'
 import { cards } from '@/features/portfolio/components/cards'
 import { IDeckContext, TChildren } from '@/shared/types'
 
 const deckContext = createContext({} as IDeckContext)
+
+const ANIMATION_CONFIG = {
+	SWIPE: { tension: 150, friction: 50 },
+	MOVE: { tension: 500, friction: 60 }
+}
+
+const RESET_DELAY = 600
 
 const to = (i: number, delay?: number) => ({
 	x: 0,
@@ -16,6 +23,9 @@ const to = (i: number, delay?: number) => ({
 
 const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })
 
+const swipeLeft = () => ({ x: -2000, rot: -30, scale: 0.8, y: 0 })
+const swipeRight = () => ({ x: 2000, rot: 30, scale: 0.8, y: 0 })
+
 export const DeckProvider = ({ children }: TChildren) => {
 	const [gone] = useState(new Set())
 	const [props, api] = useSprings(cards.length, i => ({
@@ -24,47 +34,67 @@ export const DeckProvider = ({ children }: TChildren) => {
 	}))
 	const [selectedIndex, setSelectedIndex] = useState(cards.length - 1)
 
-	const updateIndex = (index: number) => setSelectedIndex(index)
+	const updateIndex = useCallback((index: number) => setSelectedIndex(index), [])
 
-	const getOneCardAgain = () => {
+	const getOneCardAgain = useCallback(() => {
 		if (gone.size > 0) {
 			const lastCardIndex = Array.from(gone).pop()
 			gone.delete(lastCardIndex)
 			api.start(i => (i === lastCardIndex ? to(i) : null))
 		}
-	}
+	}, [gone, api])
 
-	// const swipeOneCard = () => {
-	// 	const availableIndex = cards.length - gone.size - 1
+	const swipeCard = useCallback((swipeDirection: () => { x: number; rot: number; scale: number; y: number }) => {
+		const availableIndex = cards.length - gone.size - 1
 
-	// 	if (availableIndex >= 0) {
-	// 		gone.add(availableIndex)
-	// 		api.start(i => (i === availableIndex ? from(i) : null))
+		if (availableIndex >= 0) {
+			gone.add(availableIndex)
+			api.start(i => (i === availableIndex ? {
+				...swipeDirection(),
+				config: ANIMATION_CONFIG.SWIPE
+			} : null))
 
-	// 		if (gone.size === cards.length) {
-	// 			setTimeout(() => {
-	// 				gone.clear()
-	// 				api.start(i => to(i))
-	// 			}, 600)
-	// 		}
-	// 	}
-	// }
+			if (gone.size === cards.length) {
+				setTimeout(() => {
+					gone.clear()
+					api.start(i => to(i))
+				}, RESET_DELAY)
+			}
+		}
+	}, [gone, api])
 
-	const moveToIndex = (index: number) => {
+	const swipeOneCard = useCallback(() => {
+		const availableIndex = cards.length - gone.size - 1
+
+		if (availableIndex >= 0) {
+			gone.add(availableIndex)
+			api.start(i => (i === availableIndex ? from() : null))
+
+			if (gone.size === cards.length) {
+				setTimeout(() => {
+					gone.clear()
+					api.start(i => to(i))
+				}, RESET_DELAY)
+			}
+		}
+	}, [gone, api])
+
+	const swipeCardLeft = useCallback(() => swipeCard(swipeLeft), [swipeCard])
+	const swipeCardRight = useCallback(() => swipeCard(swipeRight), [swipeCard])
+
+	const moveToIndex = useCallback((index: number) => {
 		updateIndex(index)
 		gone.clear()
 
 		api.start(i => {
 			if (i <= index) return to(i)
 			else return {
-				// ...from(i),
 				delay: (i - index) * 100,
-				config: { tension: 500, friction: 60 },
+				config: ANIMATION_CONFIG.MOVE,
 				onRest: () => api.start(to(i)),
 			}
-
 		})
-	}
+	}, [updateIndex, gone, api])
 
 	const value = {
 		api,
@@ -72,13 +102,20 @@ export const DeckProvider = ({ children }: TChildren) => {
 		to,
 		props,
 		getOneCardAgain,
-		// swipeOneCard,
+		swipeOneCard,
+		swipeCardLeft,
+		swipeCardRight,
 		selectedIndex,
 		moveToIndex,
-		updateIndex
+		updateIndex,
+		totalCards: cards.length
 	}
 
-	return createElement(deckContext.Provider, { value }, children)
+	return (
+		<deckContext.Provider value={value as unknown as IDeckContext}>
+			{children}
+		</deckContext.Provider>
+	)
 }
 
-export default deckContext;
+export default deckContext
