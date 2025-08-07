@@ -1,17 +1,8 @@
-import { IconBrandFigma, IconBrandGithub, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconLink, IconProps } from "@tabler/icons-react"
+import { IconBrandFigma, IconBrandGithub, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconLink } from "@tabler/icons-react"
 import { img } from "@/assets"
 import '@/styles/components/projects.css'
-import { FC } from "react";
 import Express from "@/assets/icons/Express";
-
-interface IProject {
-	title: string;
-	image: string;
-	description: string;
-	skills: FC<IconProps>[];
-	link: string;
-	github: string;
-}
+import type { IProject } from "@/shared/types";
 
 const { reactCraft, sanValentine, authCode, slide, chess } = img
 

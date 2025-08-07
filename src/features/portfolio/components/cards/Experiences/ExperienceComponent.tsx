@@ -1,16 +1,5 @@
-import { IconProps } from "@tabler/icons-react";
-import { FC } from "react";
 import '@/styles/components/experiences.css'
-
-interface IExperience {
-	enterprise: string;
-	position: string;
-	period: string;
-	skills: FC<IconProps>[];
-	image: string;
-	link: string;
-	description: string;
-}
+import type { IExperience } from "@/shared/types";
 
 const ExperienceComponent = (exp: IExperience) => (
 	<div className='experiences__container'>
