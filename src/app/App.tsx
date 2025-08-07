@@ -1,4 +1,3 @@
-import Aside from "@/features/navigation/components/Aside.tsx";
 import CardControllers from "@/features/deck/components/CardControllers.tsx";
 import Deck from "@/features/deck/components/Deck.tsx";
 import OpenWork from "@/shared/components/ui/OpenWork.tsx";
@@ -20,7 +19,6 @@ const App = () => (
 
         <div className="app__left">
           <OpenWork />
-          <Aside />
         </div>
 
         <div className="app__middle">
