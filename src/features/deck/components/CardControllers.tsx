@@ -1,36 +1,26 @@
-import { IconRestore } from "@tabler/icons-react"
+import { IconArrowLeft, IconArrowRight, IconSpace } from "@tabler/icons-react"
 import { useDeckContext } from "@/features/deck/hooks/useDeckContext"
-import { useEffect } from "react"
-import { IconSpace } from '@tabler/icons-react';
 import '@/styles/components/cardController.css'
 
 const CardControllers = () => {
-	const { getOneCardAgain } = useDeckContext()
-
-	const keybinds = ({ key }: { key: string }) => key === " " && getOneCardAgain();
-
-	useEffect(() => {
-		window.addEventListener("keydown", keybinds);
-
-		return () => window.removeEventListener("keydown", keybinds);
-	}, [keybinds])
+	const { getOneCardAgain, swipeCardLeft, swipeCardRight } = useDeckContext()
 
 	return (
 		<div className='cardController__container'>
-			<button
-				onClick={getOneCardAgain}
-				className='cardController__btnGetCardAgain'>
-				<IconRestore size={40} color="white" />
-			</button>
-
-			<h1 className='cardController__explain'>
-				You can press
-				<span onClick={getOneCardAgain} className='cardController__spaceBar'>
-					<IconSpace size={30} className='mr-1' />
-					space
-				</span>
-				to bring the cards back again.
-			</h1>
+			<div className="key-control-panel">
+				<div className="key-title">Reverse</div>
+				<div className="key-buttons">
+					<button className="key-btn" onClick={swipeCardLeft}>
+						<IconArrowLeft size={25} />
+					</button>
+					<button className="key-btn px-6" onClick={getOneCardAgain}>
+						<IconSpace size={25} />
+					</button>
+					<button className="key-btn" onClick={swipeCardRight}>
+						<IconArrowRight size={25} />
+					</button>
+				</div>
+			</div>
 		</div>
 	)
 }

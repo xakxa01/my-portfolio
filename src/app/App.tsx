@@ -24,12 +24,12 @@ const App = () => (
         </div>
 
         <div className="app__middle">
+          <CardControllers />
           <Deck />
         </div>
 
         <div className="app__right">
           <SocialMedia />
-          <CardControllers />
         </div>
 
       </div>

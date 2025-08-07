@@ -3,7 +3,7 @@
 }
 
 .deck__stack {
-	@apply absolute flex justify-center items-center h-full w-full;
+	@apply absolute flex justify-center items-center;
 }
 
 .deck__card {

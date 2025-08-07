@@ -1,29 +1,19 @@
 .cardController__container {
-	@apply flex-grow flex items-end justify-center h-full space-x-3
+	@apply flex justify-center items-center w-full md:pt-4 md:pb-2 absolute inset-x-0 top-24 z-0;
 }
 
-.cardController__explain {
-	@apply text-white -translate-y-32 -translate-x-3 text-3xl w-full flex flex-wrap justify-end text-right
+.key-control-panel {
+	@apply bg-transparent rounded-xl p-4 flex flex-col items-center gap-3 min-w-[200px];
 }
 
-.cardController__spaceBar {
-	@apply bg-gray-600 rounded px-2 mx-2 capitalize hover:bg-opacity-80 cursor-pointer flex justify-center items-center w-fit transition-all active:scale-90 py-1
+.key-title {
+	@apply text-bright-gray-700 text-sm font-medium text-center uppercase tracking-wider;
 }
 
-.cardController__btnGetCardAgain {
-	@apply mb-4 bg-dodger-blue-700 p-3 rounded-xl active:bg-dodger-blue-700/70 invisible absolute
+.key-buttons {
+	@apply flex gap-2 items-center;
 }
 
-@screen md {
-	.cardController__container {
-		@apply justify-end pr-4 pb-2
-	}
-
-	.cardController__btnGetCardAgain {
-		@apply p-2 visible
-	}
-
-	.cardController__explain {
-		@apply hidden
-	}
+.key-btn {
+	@apply bg-shark-950 border-none rounded-lg p-3 flex items-center justify-center cursor-pointer transition-colors duration-200 text-shark-50 hover:bg-shark-900 active:bg-shark-800;
 }
