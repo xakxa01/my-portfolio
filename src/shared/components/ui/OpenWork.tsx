@@ -1,7 +1,16 @@
-const OpenWork = () => (
-	<p className='bg-shamrock-500 w-4/12 text-center rounded-lg text-2xl py-2 font-bold text-bright-gray-950 m-4 animate-pulse md:text-base'>
-		Open to work
-	</p>
-)
+import '@/styles/components/openWork.css';
 
-export default OpenWork
+const OpenWork = () => (
+	<a
+		href="http://www.linkedin.com/in/carlosxaviergb"
+		className="openWork__shiny"
+		target="_blank"
+		rel="noopener noreferrer"
+		tabIndex={0}
+		aria-label="Open to work - LinkedIn"
+	>
+		Open to work
+	</a>
+);
+
+export default OpenWork;
