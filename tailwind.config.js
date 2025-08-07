@@ -71,11 +71,11 @@ export default {
         },
       },
       backgroundImage: {
-        'gray-logo': "url('/src/assets/svg/gris.svg')",
-        'black-logo': "url('/src/assets/svg/black.svg')",
-        ayudaConcho: "url('/src/assets/img/projects/ayudaConcho.gif')",
-        wave: "url('/src/assets/svg/wave.svg')",
-        me: `url('/src/assets/img/me.jpeg')`
+        'gray-logo': "url('/src/assets/icons/gris.svg')",
+        'black-logo': "url('/src/assets/icons/black.svg')",
+        ayudaConcho: "url('/src/assets/images/projects/ayudaConcho.gif')",
+        wave: "url('/src/assets/icons/wave.svg')",
+        me: `url('/src/assets/images/me.jpeg')`
       }
     },
     screens: {
