@@ -8,7 +8,7 @@ import { useMemo, useCallback } from 'react'
 
 const Deck = () => {
 	const { api, gone, to, props, selectedIndex } = useDeckContext()
-	
+
 	useDeckKeyboardControls()
 
 	const trans = useMemo(() => (r: number, s: number) => `perspective(10000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`, [])
@@ -52,7 +52,7 @@ const Deck = () => {
 	}, [api, gone, to]))
 
 	return <div className='deck__container'>
-		{props.map(({ x, y, rot, scale }: { x: number, y: number, rot: number, scale: number }, i: number) => (
+		{props.map(({ x, y, rot, scale }, i: number) => (
 			<animated.div
 				className='deck__stack'
 				key={i}

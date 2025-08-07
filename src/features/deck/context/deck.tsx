@@ -1,30 +1,8 @@
-import { createContext } from 'react'
 import { useState, useCallback } from 'react'
 import { useSprings } from '@react-spring/web'
 import { cards } from '@/features/portfolio/components/cards'
 import { IDeckContext, TChildren } from '@/shared/types'
-
-const deckContext = createContext({} as IDeckContext)
-
-const ANIMATION_CONFIG = {
-	SWIPE: { tension: 150, friction: 50 },
-	MOVE: { tension: 500, friction: 60 }
-}
-
-const RESET_DELAY = 600
-
-const to = (i: number, delay?: number) => ({
-	x: 0,
-	y: 0,
-	scale: 1,
-	rot: -2 + Math.random() * 5,
-	delay: i * delay!,
-})
-
-const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })
-
-const swipeLeft = () => ({ x: -2000, rot: -30, scale: 0.8, y: 0 })
-const swipeRight = () => ({ x: 2000, rot: 30, scale: 0.8, y: 0 })
+import { deckContext, ANIMATION_CONFIG, RESET_DELAY, to, from, swipeLeft, swipeRight } from './deckContextHelpers'
 
 export const DeckProvider = ({ children }: TChildren) => {
 	const [gone] = useState(new Set())
@@ -118,4 +96,5 @@ export const DeckProvider = ({ children }: TChildren) => {
 	)
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default deckContext
