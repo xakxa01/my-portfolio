@@ -1,5 +1,5 @@
 .app__container {
-	@apply relative h-screen w-full bg-slate-950 overflow-hidden flex justify-between
+	@apply relative h-screen w-full overflow-hidden flex justify-between
 }
 
 .app__left {

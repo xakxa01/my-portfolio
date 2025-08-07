@@ -8,22 +8,31 @@ import '@/styles/globals/app.css'
 
 const App = () => (
   <Provider>
-    <div className="app__container">
+    <div className="min-h-screen w-full relative">
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: "radial-gradient(125% 125% at 50% 100%, #000000 40%, #010133 100%)",
+        }}
+      />
 
-      <div className="app__left">
-        <OpenWork />
-        <Aside />
+      <div className="app__container">
+
+        <div className="app__left">
+          <OpenWork />
+          <Aside />
+        </div>
+
+        <div className="app__middle">
+          <Deck />
+        </div>
+
+        <div className="app__right">
+          <SocialMedia />
+          <CardControllers />
+        </div>
+
       </div>
-
-      <div className="app__middle">
-        <Deck />
-      </div>
-
-      <div className="app__right">
-        <SocialMedia />
-        <CardControllers />
-      </div>
-
     </div>
   </Provider >
 );
