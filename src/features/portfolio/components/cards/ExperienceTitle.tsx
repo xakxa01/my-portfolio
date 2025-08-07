@@ -1,4 +1,4 @@
-import "@/styles/card/experienceTitle.css";
+import '@/styles/components/experienceTitle.css'
 
 const title = "experience";
 const titleLength = title.length;

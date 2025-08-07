@@ -1,5 +1,5 @@
 import { svg } from '@/assets';
-import '@/styles/card/presentationCard.css'
+import '@/styles/components/presentationCard.css'
 
 const title = "developer";
 const splitTitle = title.toUpperCase().split("");

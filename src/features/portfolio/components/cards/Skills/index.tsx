@@ -1,6 +1,6 @@
-import { cutArray } from "@/lib/cutArray";
+import { cutArray } from "@/shared/utils/cutArray";
 import SkillComponent from "./SkillComponent";
-import { skills } from "./skillList";
+import { skills } from '@/features/portfolio/data/skillList'
 
 const groupArray = cutArray(skills, 4);
 

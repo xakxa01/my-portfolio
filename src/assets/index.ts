@@ -1,32 +1,32 @@
 // others
-import whiteLogo from './svg/white.svg'
+import whiteLogo from './icons/white.svg'
 
 // icons
-import Strapi from './svg/Strapi';
-import Java from './svg/Java';
-import Express from './svg/Express';
-import MaterialUI from './svg/MaterialUI';
+import Strapi from './icons/Strapi';
+import Java from './icons/Java';
+import Express from './icons/Express';
+import MaterialUI from './icons/MaterialUI';
 
 // buttons
-import playStoreBtn from './img/playStoreBtn.png';
-import appStoreBtn from './img/appStoreBtn.png';
+import playStoreBtn from './images/playStoreBtn.png';
+import appStoreBtn from './images/appStoreBtn.png';
 
 // experiences
-import helpMyTeam from './img/experiences/helpmyteam.jpg';
-import melanieTatis from './img/experiences/MelanieTatis.png';
-import nisakaComics from './img/experiences/nisakaComics.png';
-import yisraelTechnology from './img/experiences/yisraelTechnology.jpg';
-import idoppril from './img/experiences/idoppril.jpg'
-import dofuCaribbean from './img/experiences/dofuCaribbean.png'
-import thundercoders from './img/experiences/thunderCoders.png'
+import helpMyTeam from './images/experiences/helpmyteam.jpg';
+import melanieTatis from './images/experiences/MelanieTatis.png';
+import nisakaComics from './images/experiences/nisakaComics.png';
+import yisraelTechnology from './images/experiences/yisraelTechnology.jpg';
+import idoppril from './images/experiences/idoppril.jpg'
+import dofuCaribbean from './images/experiences/dofuCaribbean.png'
+import thundercoders from './images/experiences/thunderCoders.png'
 
 // projects
-import ayudaConcho from './img/ayudaConchoLogo.png';
-import reactCraft from './img/projects/reactcraft.png';
-import sanValentine from './img/projects/sanValentine.png'
-import chess from './img/projects/chess.png'
-import slide from './img/projects/slide.png'
-import authCode from './img/projects/authCode.png'
+import ayudaConcho from './images/ayudaConchoLogo.png';
+import reactCraft from './images/projects/reactcraft.png';
+import sanValentine from './images/projects/sanValentine.png'
+import chess from './images/projects/chess.png'
+import slide from './images/projects/slide.png'
+import authCode from './images/projects/authCode.png'
 
 export const img = {
 	helpMyTeam,

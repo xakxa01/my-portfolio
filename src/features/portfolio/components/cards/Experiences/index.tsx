@@ -1,5 +1,5 @@
 import ExperienceComponent from "./ExperienceComponent";
-import { experiences } from "./experiencesList";
+import { experiences } from '@/features/portfolio/data/experiencesList'
 
 const Experiences = () => ({
 	experiences,

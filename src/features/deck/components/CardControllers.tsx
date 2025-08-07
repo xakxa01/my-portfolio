@@ -1,8 +1,8 @@
 import { IconRestore } from "@tabler/icons-react"
-import { useDeckContext } from "@/hook/useDeckContext"
+import { useDeckContext } from "@/features/deck/hooks/useDeckContext"
 import { useEffect } from "react"
 import { IconSpace } from '@tabler/icons-react';
-import '@/styles/cardController.css'
+import '@/styles/components/cardController.css'
 
 const CardControllers = () => {
 	const { getOneCardAgain } = useDeckContext()
