@@ -20,6 +20,7 @@ const CardControllers = () => {
 						<IconArrowRight size={25} />
 					</button>
 				</div>
+				<div className="key-title">With keyboard is faster</div>
 			</div>
 		</div>
 	)
