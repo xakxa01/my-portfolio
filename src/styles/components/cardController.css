@@ -1,13 +1,13 @@
 .cardController__container {
-	@apply flex justify-center items-center w-full md:pt-4 md:pb-2 absolute inset-x-0 top-24 z-0;
+	@apply flex justify-center items-center w-full md:pt-4 md:pb-2 absolute h-full inset-0;
 }
 
 .key-control-panel {
-	@apply bg-transparent rounded-xl p-4 flex flex-col items-center gap-3 min-w-[200px];
+	@apply bg-transparent rounded-xl p-4 flex flex-col items-center gap-3 min-w-[200px] -translate-y-[27rem];
 }
 
 .key-title {
-	@apply text-bright-gray-700 text-sm font-medium text-center uppercase tracking-wider;
+	@apply text-bright-gray-700 text-sm font-medium text-center uppercase tracking-wider md:hidden;
 }
 
 .key-buttons {
@@ -16,4 +16,10 @@
 
 .key-btn {
 	@apply bg-shark-950 border-none rounded-lg p-3 flex items-center justify-center cursor-pointer transition-colors duration-200 text-shark-50 hover:bg-shark-900 active:bg-shark-800;
+}
+
+@screen md {
+	.key-control-panel {
+		@apply translate-y-[16rem] z-10
+	}
 }
