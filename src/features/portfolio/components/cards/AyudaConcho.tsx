@@ -27,8 +27,8 @@ const AyudaConcho = () => (
 
 
 			<p className='ayudaConcho__description'>
-				¡Basta de pagar transportes más caros por no encontrar el concho indicado! <br /> <br />
-				La primera app de conchos en República Dominicana. ¡Viaja de manera fácil y conveniente con nuestra aplicación de conchos! Obtén acceso rápido y seguro a una amplia red de conchos, el medio de transporte más popular en la ciudad.
+				Stop paying more for transportation just because you can't find the right concho! <br /> <br />
+				The first concho app in the Dominican Republic. Travel easily and conveniently with our concho application! Get quick and safe access to a wide network of conchos, the most popular means of transportation in the city.
 			</p>
 
 			<div className='ayudaConcho__buttons'>
