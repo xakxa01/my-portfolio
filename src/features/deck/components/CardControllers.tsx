@@ -11,13 +11,13 @@ const CardControllers = () => {
 				<div className="key-title">Reverse</div>
 				<div className="key-buttons">
 					<button className="key-btn" onClick={swipeCardLeft}>
-						<IconArrowLeft size={25} />
+						<IconArrowLeft size={20} />
 					</button>
-					<button className="key-btn px-6" onClick={getOneCardAgain}>
-						<IconSpace size={25} />
+					<button className="key-btn px-5" onClick={getOneCardAgain}>
+						<IconSpace size={20} />
 					</button>
 					<button className="key-btn" onClick={swipeCardRight}>
-						<IconArrowRight size={25} />
+						<IconArrowRight size={20} />
 					</button>
 				</div>
 				<div className="key-title">With keyboard is faster</div>

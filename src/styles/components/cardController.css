@@ -3,11 +3,11 @@
 }
 
 .key-control-panel {
-	@apply bg-transparent rounded-xl p-4 flex flex-col items-center gap-3 min-w-[200px] -translate-y-[27rem];
+	@apply bg-transparent rounded-xl p-4 flex flex-col items-center gap-2 min-w-[200px] -translate-y-[27rem];
 }
 
 .key-title {
-	@apply text-bright-gray-700 text-sm font-medium text-center uppercase tracking-wider md:hidden;
+	@apply text-bright-gray-700 text-xs font-medium text-center uppercase tracking-wider md:hidden;
 }
 
 .key-buttons {
@@ -15,7 +15,7 @@
 }
 
 .key-btn {
-	@apply bg-shark-950 border-none rounded-lg p-3 flex items-center justify-center cursor-pointer transition-colors duration-200 text-shark-50 hover:bg-shark-900 active:bg-shark-800;
+	@apply bg-shark-950 border-none rounded-lg p-2 flex items-center justify-center cursor-pointer transition-colors duration-200 text-shark-50 hover:bg-shark-900 active:bg-shark-800;
 }
 
 @screen md {
