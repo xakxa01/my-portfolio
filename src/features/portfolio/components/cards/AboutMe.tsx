@@ -24,7 +24,7 @@ const AboutMe = () => (
 					<div className='aboutMe__languages'>
 						<p>
 							<strong>english:</strong>
-							intermediate
+							High
 						</p>
 						<p>
 							<strong>spanish:</strong>
