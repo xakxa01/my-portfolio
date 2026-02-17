@@ -1,45 +1,48 @@
-import { SpringRef } from "@react-spring/web";
+import { SpringRef, SpringValue } from "@react-spring/web";
 import { IconProps } from "@tabler/icons-react";
-import { ReactNode, FC } from "react"
-import { State } from "react-use-gesture/dist/types";
+import { FC, JSX, ReactNode } from "react";
 
 export type TChildren = {
-	children: ReactNode
-}
+	children: ReactNode;
+};
 
-export interface ICardProps {
+export type TSkillIcon = FC<IconProps>;
+
+export type TDeckSpring = {
 	x: number;
 	y: number;
 	rot: number;
 	scale: number;
+	delay?: number;
+};
+
+export interface ICardProps {
+	x: SpringValue<number>;
+	y: SpringValue<number>;
+	rot: SpringValue<number>;
+	scale: SpringValue<number>;
 }
 
 export interface IDeckContext {
-	api: SpringRef<State>,
-	gone: Set<unknown>,
-	to: (i: number, delay?: number) => {
-		x: number;
-		y: number;
-		scale: number;
-		rot: number;
-		delay: number;
-	},
-	props: ICardProps[],
-	getOneCardAgain: VoidFunction,
-	swipeOneCard: VoidFunction,
-	swipeCardLeft: VoidFunction,
-	swipeCardRight: VoidFunction,
-	selectedIndex: number,
-	moveToIndex: (index: number) => void,
-	updateIndex: (index: number) => void,
-	totalCards: number
+	api: SpringRef<TDeckSpring>;
+	gone: Set<number>;
+	to: (i: number, delay?: number) => TDeckSpring;
+	props: ICardProps[];
+	getOneCardAgain: VoidFunction;
+	swipeOneCard: VoidFunction;
+	swipeCardLeft: VoidFunction;
+	swipeCardRight: VoidFunction;
+	selectedIndex: number;
+	moveToIndex: (index: number) => void;
+	updateIndex: (index: number) => void;
+	totalCards: number;
 }
 
 export interface IProject {
 	title: string;
 	image: string;
 	description: string;
-	skills: FC<IconProps>[];
+	skills: TSkillIcon[];
 	link?: string;
 	github?: string;
 }
@@ -48,8 +51,13 @@ export interface IExperience {
 	enterprise: string;
 	position: string;
 	period: string;
-	skills: FC<IconProps>[];
+	skills: TSkillIcon[];
 	image: string;
-	link: string;
+	link?: string;
 	description: string;
+}
+
+export interface IDeckCard {
+	component: () => JSX.Element;
+	name: string;
 }

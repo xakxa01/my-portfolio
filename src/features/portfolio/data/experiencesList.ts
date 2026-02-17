@@ -1,12 +1,13 @@
 import { img, svg } from "@/assets";
 import { IconBrandBitbucket, IconBrandFigma, IconBrandFirebase, IconBrandGraphql, IconBrandNextjs, IconBrandReact, IconBrandRedux, IconBrandSass, IconBrandTailwind, IconBrandTypescript, IconBrandWordpress, IconBrandGit, IconBrandMysql } from "@tabler/icons-react";
+import { IExperience } from "@/shared/types";
 const { Strapi, MaterialUI } = svg;
 
 const
 	frontend = "Frontend Developer",
 	reactNative = "React Native Developer";
 
-export const experiences = [
+export const experiences: IExperience[] = [
 	{
 		enterprise: "Thundercodes",
 		position: `Senior ${frontend}`,

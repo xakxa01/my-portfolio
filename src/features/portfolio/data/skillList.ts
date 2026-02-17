@@ -25,10 +25,11 @@ import {
 	IconBrandTypescript,
 } from "@tabler/icons-react";
 import { svg } from "@/assets";
+import { TSkillIcon } from "@/shared/types";
 
 const { Express, Java, Strapi, MaterialUI } = svg;
 
-export const skills = [
+export const skills: TSkillIcon[] = [
 	IconBrandHtml5,
 	IconBrandCss3,
 	IconBrandJavascript,

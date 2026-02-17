@@ -1,12 +1,11 @@
 import '@/styles/components/skills.css'
-import { IconProps } from "@tabler/icons-react";
-import { FC } from "react";
+import { TSkillIcon } from "@/shared/types";
 
-const SkillComponent = (array: []) => (
+const SkillComponent = (array: TSkillIcon[]) => (
 	<div className='skills__container'>
 		<div className='skills__containerIcons'>
-			{array.map((Skill: FC<IconProps>, i) => (
-				<span className='skills__icon' key={i}>
+			{array.map((Skill, i) => (
+				<span className='skills__icon' key={`skill-${i}`}>
 					<Skill size={100} />
 				</span>
 			))}

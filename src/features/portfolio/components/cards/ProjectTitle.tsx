@@ -1,10 +1,10 @@
 import '@/styles/components/projectTitle.css'
 
 const ProjectTitle = () => (
-	<p className='projectTitle__container'>
-		Projects
+	<div className='projectTitle__container'>
+		<span>Projects</span>
 		<div className='projectTitle__faces'/>
-	</p>
+	</div>
 )
 
 export default ProjectTitle

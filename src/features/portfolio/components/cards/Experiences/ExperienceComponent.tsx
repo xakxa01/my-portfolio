@@ -6,8 +6,10 @@ const ExperienceComponent = (exp: IExperience) => (
 		<div className='experiences__picture'>
 			<img
 				src={exp.image}
-				alt="job"
+				alt={`${exp.enterprise} logo`}
 				draggable={false}
+				loading='lazy'
+				decoding='async'
 			/>
 		</div>
 
@@ -21,11 +23,11 @@ const ExperienceComponent = (exp: IExperience) => (
 
 			<p className='h-full md:text-sm'>{exp.description}</p>
 			<div className="experiences__bottomContainer">
-				<ul className='experiences__skills__container'>
+				<ul className='experiences__skills__container' aria-label='Experience technologies'>
 					{exp.skills?.map((Skill, i) => (
-						<span className='experiences__skill' key={i}>
-							<Skill size={30} />
-						</span>
+						<li className='experiences__skill' key={`experience-skill-${exp.enterprise}-${i}`}>
+							<Skill size={30} aria-hidden />
+						</li>
 					))}
 				</ul>
 			</div>

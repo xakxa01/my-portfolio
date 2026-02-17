@@ -2,7 +2,7 @@ import '@/styles/components/openWork.css';
 
 const OpenWork = () => (
 	<a
-		href="http://www.linkedin.com/in/carlosxaviergb"
+		href="https://www.linkedin.com/in/carlosxaviergb"
 		className="openWork__shiny"
 		target="_blank"
 		rel="noopener noreferrer"

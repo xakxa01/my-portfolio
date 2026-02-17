@@ -21,7 +21,10 @@ const AyudaConcho = () => (
 				<img
 					draggable={false}
 					src={ayudaConcho}
-					alt="logo" />
+					alt="Ayuda Concho logo"
+					loading='lazy'
+					decoding='async'
+				/>
 				<h2>Ayuda Concho</h2>
 			</div>
 
@@ -33,11 +36,19 @@ const AyudaConcho = () => (
 
 			<div className='ayudaConcho__buttons'>
 				{buttons.map(({ img, link }) => (
-					<a href={link} target='_blank' rel='noopener noreferrer' key={link}>
+					<a
+						href={link}
+						target='_blank'
+						rel='noopener noreferrer'
+						key={link}
+						aria-label='Download Ayuda Concho app'
+					>
 						<img
 							draggable={false}
 							src={img}
-							alt='store'
+							alt='Store download button'
+							loading='lazy'
+							decoding='async'
 						/>
 					</a>
 				))}

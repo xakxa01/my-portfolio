@@ -50,9 +50,11 @@ const ProjectComponent = (pro: IProject) => (
 	<div className='projects__container'>
 		<div className='projects__picture'>
 			<img
-				alt="job"
+				alt={`${pro.title} preview`}
 				src={pro.image}
 				draggable={false}
+				loading='lazy'
+				decoding='async'
 			/>
 		</div>
 
@@ -62,25 +64,37 @@ const ProjectComponent = (pro: IProject) => (
 			<p className='projects__description'>{pro.description}</p>
 
 			<div className="projects__bottomContainer">
-				<ul className='projects__skills__container'>
+				<ul className='projects__skills__container' aria-label='Project technologies'>
 					{pro.skills?.map((Skill, i) => (
-						<span className='projects__skill' key={i}>
-							<Skill size={30} />
-						</span>
+						<li className='projects__skill' key={`project-skill-${pro.title}-${i}`}>
+							<Skill size={30} aria-hidden />
+						</li>
 					))}
 				</ul>
 
 				<div className='projects__buttons__container'>
 					{pro.github &&
-						<a href={pro.github} className='projects__githubBtn'>
-							<IconBrandGithub size={30} color='white' />
+						<a
+							href={pro.github}
+							className='projects__githubBtn'
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label={`Open ${pro.title} source code on GitHub`}
+						>
+							<IconBrandGithub size={30} color='white' aria-hidden />
 							<span>watch code</span>
 						</a>
 					}
 
 					{pro.link &&
-						<a href={pro.link} className='projects__visitBtn'>
-							<IconLink size={30} color='white' />
+						<a
+							href={pro.link}
+							className='projects__visitBtn'
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label={`Visit ${pro.title} website`}
+						>
+							<IconLink size={30} color='white' aria-hidden />
 							<span>visit website</span>
 						</a>
 					}

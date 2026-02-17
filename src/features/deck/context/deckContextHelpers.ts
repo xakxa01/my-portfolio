@@ -1,8 +1,3 @@
-import { createContext } from 'react'
-import { IDeckContext } from '@/shared/types'
-
-export const deckContext = createContext({} as IDeckContext)
-
 export const ANIMATION_CONFIG = {
   SWIPE: { tension: 150, friction: 50 },
   MOVE: { tension: 500, friction: 60 }
@@ -15,7 +10,7 @@ export const to = (i: number, delay?: number) => ({
   y: 0,
   scale: 1,
   rot: -2 + Math.random() * 5,
-  delay: i * delay!,
+  delay: delay ? i * delay : 0,
 })
 
 export const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -10000 })

@@ -64,6 +64,9 @@ const Deck = () => {
 				<animated.div
 					{...bind(i)}
 					className='deck__card'
+					role='group'
+					aria-roledescription='slide'
+					aria-label={`Portfolio card ${i + 1} of ${cards.length}`}
 					style={{ transform: interpolate([rot, scale], trans) }}>
 					{cards[i].component()}
 				</animated.div>

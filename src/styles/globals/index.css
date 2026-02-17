@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 * {
-	@apply select-none
+	@apply box-border;
+}
+
+img,
+button,
+a {
+	@apply select-none;
+}
+
+:focus-visible {
+	@apply outline outline-2 outline-offset-2 outline-dodger-blue-400;
 }
