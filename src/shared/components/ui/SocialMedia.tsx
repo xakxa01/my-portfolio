@@ -8,7 +8,7 @@ const socialMedia = [
 	},
 	{
 		icon: IconBrandLinkedin,
-		link: "https://www.linkedin.com/in/carlosxaviergb",
+		link: "https://www.linkedin.com/in/carlosxgb/",
 		label: "LinkedIn profile",
 	},
 	{

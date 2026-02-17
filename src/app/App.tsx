@@ -1,19 +1,11 @@
 import CardControllers from "@/features/deck/components/CardControllers.tsx";
 import Deck from "@/features/deck/components/Deck.tsx";
-import ResumePage from "@/features/resume/ResumePage.tsx";
 import OpenWork from "@/shared/components/ui/OpenWork.tsx";
 import Provider from "@/app/providers/Provider.tsx";
 import SocialMedia from "@/shared/components/ui/SocialMedia.tsx";
 import '@/styles/globals/app.css'
 
-const App = () => {
-  const currentPath = window.location.pathname;
-
-  if (currentPath === "/resume") {
-    return <ResumePage />;
-  }
-
-  return (
+const App = () => (
     <Provider>
       <div className="min-h-screen w-full relative">
         <div
@@ -41,7 +33,6 @@ const App = () => {
         </div>
       </div>
     </Provider >
-  );
-};
+);
 
 export default App;

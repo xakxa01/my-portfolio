@@ -1,5 +1,9 @@
+.openWork__container {
+  @apply m-4 flex w-fit items-center gap-3 md:m-2 md:gap-2;
+}
+
 .openWork__shiny {
-  @apply relative overflow-hidden cursor-pointer transition-shadow duration-300 shadow-lg bg-shamrock-500 w-4/12 text-center rounded-lg text-2xl py-2 font-bold text-bright-gray-950 m-4 md:text-base;
+  @apply relative overflow-hidden cursor-pointer transition-shadow duration-300 shadow-lg bg-shamrock-500 text-center rounded-lg text-2xl py-2 px-4 font-bold text-bright-gray-950 md:text-base;
 }
 
 .openWork__shiny::before {
@@ -23,5 +27,15 @@
   }
   100% {
     left: 120%;
+  }
+}
+
+.openWork__resume {
+  @apply inline-flex items-center justify-center rounded-lg border border-white/30 bg-white/10 px-4 py-2 text-base font-semibold text-white transition-colors hover:bg-white/20;
+}
+
+@screen md {
+  .openWork__resume {
+    @apply text-sm;
   }
 }
