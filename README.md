@@ -25,27 +25,68 @@ This system is built with custom React hooks, context, and gesture handling for 
 
 ### Prerequisites
 - Node.js (v18 or higher recommended)
-- pnpm (or npm/yarn)
+- One package manager: Bun, pnpm, npm, or Yarn
 
 ### Install dependencies
 ```bash
+# Bun
+bun install
+
+# pnpm
 pnpm install
+
+# npm
+npm install
+
+# Yarn
+yarn install
 ```
 
 ### Run the development server
 ```bash
+# Bun
+bun run dev
+
+# pnpm
 pnpm dev
+
+# npm
+npm run dev
+
+# Yarn
+yarn dev
 ```
 
 ### Build for production
 ```bash
+# Bun
+bun run build
+
+# pnpm
 pnpm build
+
+# npm
+npm run build
+
+# Yarn
+yarn build
 ```
 
 ### Preview production build
 ```bash
+# Bun
+bun run preview
+
+# pnpm
 pnpm preview
+
+# npm
+npm run preview
+
+# Yarn
+yarn preview
 ```
+
 
 ## 📁 Project Structure
 
