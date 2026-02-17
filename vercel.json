@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://res.cloudinary.com/dsxzqfpza/image/upload/v1771358991/resume.pdf",
+      "permanent": true
+    }
+  ]
+}
