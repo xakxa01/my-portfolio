@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/resume",
-      "destination": "https://res.cloudinary.com/dsxzqfpza/image/upload/%VITE_CLOUDINARY_RESUME_PUBLIC_ID%.pdf",
-      "permanent": true
+      "destination": "/"
     }
   ]
 }
