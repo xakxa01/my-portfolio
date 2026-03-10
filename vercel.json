@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/resume",
-      "destination": "https://res.cloudinary.com/dsxzqfpza/image/upload/v1771358991/resume.pdf",
+      "destination": "https://res.cloudinary.com/dsxzqfpza/image/upload/%VITE_CLOUDINARY_RESUME_PUBLIC_ID%.pdf",
       "permanent": true
     }
   ]
