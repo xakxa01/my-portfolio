@@ -5,7 +5,16 @@ import Provider from "@/app/providers/Provider.tsx";
 import SocialMedia from "@/shared/components/ui/SocialMedia.tsx";
 import '@/styles/globals/app.css'
 
-const App = () => (
+const App = () => {
+  const resumeVersion = import.meta.env.VITE_CLOUDINARY_RESUME_VERSION;
+
+  if (window.location.pathname === "/resume" && resumeVersion) {
+    const resumeUrl = `https://res.cloudinary.com/dsxzqfpza/image/upload/${resumeVersion}/resume.pdf`;
+    window.location.replace(resumeUrl);
+    return null;
+  }
+
+  return (
     <Provider>
       <div className="min-h-screen w-full relative">
         <div
@@ -33,6 +42,7 @@ const App = () => (
         </div>
       </div>
     </Provider >
-);
+  );
+};
 
 export default App;
